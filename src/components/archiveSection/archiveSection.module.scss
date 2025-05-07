@@ -1,0 +1,166 @@
+@use '@styles/partials/variable.scss' as *;
+@use '@styles/partials/_fonts.scss' as *;
+@use '@styles/partials/_mixins.scss' as *;
+
+.archivesSection {
+  .listItem {
+    .cardBox {
+      text-decoration: none;
+      height: 100%;
+      .cardContainer {
+        box-shadow: 0px 3px 6px #00000029;
+        height: 100%;
+        .cardImg {
+          width: 100%;
+          border: 1px solid #979797;
+          aspect-ratio: 3/2;
+          object-fit: cover;
+
+          &.wide {
+            aspect-ratio: 3 / 2;
+          }
+          &.wide {
+            aspect-ratio: 16 / 9;
+          }
+          &.ultrawide {
+            aspect-ratio: 2 / 1;
+          }
+          &.widest {
+            aspect-ratio: 2.1 / 1;
+          }
+        }
+        .cardBody {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          padding: 1rem;
+          .cardContent {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0;
+            text-align: left;
+          }
+          .downloadButton {
+            padding: 0;
+            margin-left: 16px;
+            background: none;
+            border: none;
+            width: 45px;
+            height: 45px;
+
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+        }
+        .date {
+          padding-top: 0;
+          p {
+            color: #979797;
+            font-size: 0.8rem;
+            margin-bottom: 0;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+
+  .leftShevIco {
+    border-radius: 50%;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 0.2rem;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 3rem;
+    user-select: none;
+  }
+  .rightShevIco {
+    border-radius: 50%;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 0.2rem;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 3rem;
+    user-select: none;
+  }
+
+  .paginationResponsive {
+    list-style: none;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    user-select: none;
+
+    :global(ul) {
+      display: flex;
+      padding-left: 0;
+      position: relative;
+    }
+    :global(ul:before) {
+      content: '';
+      width: calc(100% - 3rem);
+      position: absolute;
+      border-radius: 3rem;
+      height: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+    }
+    :global(ul li .page-link) {
+      border: none;
+      background: transparent;
+      color: #000;
+      z-index: 10;
+    }
+    :global(ul li .page-link:focus) {
+      box-shadow: none;
+    }
+
+    :global(ul li) {
+      height: 2rem;
+      width: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0.5rem;
+      position: relative;
+      z-index: 10;
+    }
+    :global(ul li:first-child) {
+      z-index: 0;
+    }
+    :global(ul li:last-child) {
+      z-index: 0;
+    }
+    :global(ul li a) {
+      font-weight: 700;
+      font-family: 'Adani-Regular';
+    }
+    :global(ul .page-item.active) {
+      background-color: #0052cc;
+      a {
+        color: #ffffff;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .listItem {
+      padding: 12px;
+
+      img:first-child {
+        margin-right: 12px;
+      }
+    }
+  }
+}

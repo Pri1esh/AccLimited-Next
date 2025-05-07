@@ -1,0 +1,123 @@
+@use '@styles/partials/variable.scss' as *;
+@use '@styles/partials/_fonts.scss' as *;
+@use '@styles/partials/_mixins.scss' as *;
+
+.RowSection {
+  .cardHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+    h4 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0;
+      text-align: left;
+    }
+    .viewMore {
+      text-decoration: underline;
+      font-size: 1rem;
+      color: #1a779a;
+      margin-left: 1rem;
+    }
+  }
+
+  .researchCard {
+    box-shadow: 0px 3px 6px #00000029;
+
+    .tableWrapper {
+      background-color: white;
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .table {
+      margin-bottom: 0;
+      --bs-table-striped-bg: --bs-body-bg;
+      thead {
+        tr {
+          th {
+            background-color: #8e3778;
+            color: white;
+            font-weight: 500;
+            padding: 1rem;
+            border: none;
+            text-align: left;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+            border-left: 1px solid #707070;
+            border-right: 1px solid #707070;
+
+
+          td {
+            padding: 1rem;
+            border-top: 1px solid #dee2e6;
+            vertical-align: middle;
+            text-align: left;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+
+  .cols{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .creditCard {
+    padding: 1.2rem;
+    box-shadow: 0px 3px 6px #00000029;
+    background-color: #fff;
+    color: #fff;
+    height: 100%;
+    .cardBody {
+      h5 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        text-align: left;
+        margin-bottom: 1rem;
+        color: #000;
+      }
+      ul {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 0;
+        li {
+          margin-bottom: 1rem;
+          a {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            text-align: left;
+            text-decoration: none;
+
+            .icon {
+              display: inline-block;
+              min-width: 0.5rem;
+              width: 0.5rem;
+              height: 0.5rem;
+              aspect-ratio: 1;
+              border-radius: 50%;
+              background-color: #000;
+              margin-top: 0.5rem;
+              margin-right: 1rem;
+            }
+            .title {
+              font-size: 1.2rem;
+              text-align: left;
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+  }
+}

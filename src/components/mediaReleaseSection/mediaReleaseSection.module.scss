@@ -1,0 +1,207 @@
+@use '@styles/partials/variable.scss' as *;
+@use '@styles/partials/_fonts.scss' as *;
+@use '@styles/partials/_mixins.scss' as *;
+
+.mediaReleaseSection {
+  .title {
+    color: #0047cc;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 1000;
+    // margin-bottom: 1rem;
+    text-align: left;
+    font-family: 'Adani-Regular';
+
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .yearHead {
+    font-size: 1.5rem;
+    font-weight: 1000;
+    margin-bottom: 2rem;
+    text-align: left;
+    font-family: 'Adani-Regular';
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+
+    .yearSelector {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      select {
+        min-width: 15rem;
+        font-weight: 600;
+        option {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .listTile {
+    border: none;
+    padding-inline: 0;
+    .cardBox {
+      text-decoration: none;
+      .cardCointainer {
+        height: 100%;
+        box-shadow: 0px 3px 6px #00000029;
+        border: none;
+
+        .cardBody {
+          .cardContent {
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.5;
+            text-align: left;
+          }
+          .cardText {
+            text-align: left;
+            color: #9a9a9a;
+          }
+        }
+      }
+    }
+  }
+
+  .subTitle {
+    font-size: 1.2rem;
+    // margin: 1rem 0 2rem;
+    padding-left: 12px;
+    border-left: 3px solid #22c55e;
+    line-height: 1.5;
+    text-align: left;
+    font-family: 'Adani-Regular';
+    margin-bottom: 2.5rem;
+  }
+  .description {
+    font-size: 1.2rem;
+    margin: 1rem 0 2rem;
+    padding-left: 12px;
+    border-left: 3px solid #22c55e;
+    line-height: 1.5;
+    text-align: left;
+    font-family: 'Adani-Regular';
+  }
+
+  .noResults {
+    text-align: center;
+    padding: 2rem;
+    color: #6b7280;
+    font-size: 14px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .listItem {
+      padding: 12px;
+
+      img:first-child {
+        margin-right: 12px;
+      }
+    }
+  }
+
+  .leftShevIco {
+    border-radius: 50%;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 0.2rem;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 3rem;
+    user-select: none;
+  }
+  .rightShevIco {
+    border-radius: 50%;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 0.2rem;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 3rem;
+    user-select: none;
+  }
+
+  .paginationResponsive {
+    list-style: none;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    user-select: none;
+
+    :global(ul) {
+      display: flex;
+      padding-left: 0;
+      position: relative;
+    }
+    :global(ul:before) {
+      content: '';
+      width: calc(100% - 3rem);
+      position: absolute;
+      border-radius: 3rem;
+      height: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+    }
+    :global(ul li .page-link) {
+      border: none;
+      background: transparent;
+      color: #000;
+      z-index: 10;
+    }
+    :global(ul li .page-link:focus) {
+      box-shadow: none;
+    }
+
+    :global(ul li) {
+      height: 2rem;
+      width: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0.5rem;
+      position: relative;
+      z-index: 10;
+    }
+    :global(ul li:first-child) {
+      z-index: 0;
+    }
+    :global(ul li:last-child) {
+      z-index: 0;
+    }
+    :global(ul li a) {
+      font-weight: 700;
+      font-family: 'Adani-Regular';
+    }
+    :global(ul .page-item.active) {
+      background-color: #0052cc;
+      a{
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.max3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Number of lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,173 @@
+@use '@styles/partials/variable.scss' as *;
+@use '@styles/partials/_fonts.scss' as *;
+@use '@styles/partials/_mixins.scss' as *;
+
+.investorSection {
+  .title {
+    color: #0047CC;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 1000;
+    // margin-bottom: 1rem;
+    text-align: left;
+    font-family: 'Adani-Regular';
+
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+  .description {
+    font-size: 1.2rem;
+    margin: 1rem 0 2rem;
+    padding-left: 12px;
+    border-left: 3px solid #22c55e;
+    line-height: 1.5;
+    text-align: left;
+    font-family: 'Adani-Regular';
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+
+    @media(max-width:$sm){
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 2rem;
+    }
+
+    .yearSelector {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      select {
+        min-width: 15rem;
+        font-weight: 600;
+        option{
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .subTitle {
+    font-size: 1.2rem;
+    // margin: 1rem 0 2rem;
+    padding-left: 12px;
+    border-left: 3px solid #22c55e;
+    line-height: 1.5;
+    text-align: left;
+    font-family: 'Adani-Regular';
+    margin-bottom: 2.5rem;
+  }
+  .description {
+    font-size: 1.2rem;
+    margin: 1rem 0 2rem;
+    padding-left: 12px;
+    border-left: 3px solid #22c55e;
+    line-height: 1.5;
+    text-align: left;
+    font-family: 'Adani-Regular';
+  }
+
+  .cardContainer {
+    &:nth-child(odd) {
+      background-color: #f6f6f6;
+      padding: 2rem 0;
+      width: 100%;
+      margin: 2rem 0;
+    }
+  }
+
+  .cardGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 576px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .card {
+    background: white;
+    box-shadow: 0 1px 3px #00000029;
+    padding: 1.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .cardTitle {
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.5;
+      color: #111827;
+      margin-bottom: 0.5rem;
+      flex: 1;
+      text-align: left;
+    }
+
+    .cardDate {
+      font-size: 1rem;
+      color: #6b7280;
+      margin-bottom: 1rem;
+      text-align: left;
+    }
+
+    .cardLinks {
+      display: flex;
+      gap: 3rem;
+
+      .link {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: #007AC0;
+        font-size: 1rem;
+        font-weight: 600;
+        text-decoration: underline;
+        line-height: 1.5;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+
+  .loadMoreButton {
+    background: linear-gradient(to right, #1c9c96, #316eb2);
+    border: none;
+    padding: 0.75rem 2.5rem;
+    border-radius: 2rem;
+    font-weight: 500;
+    font-size: 1rem; // Slightly larger for better visibility
+    color: white;
+    transition:
+      opacity 0.2s ease,
+      transform 0.2s ease;
+
+    &:hover {
+      opacity: 0.9;
+      transform: scale(1.05); // Add hover animation for better interactivity
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}

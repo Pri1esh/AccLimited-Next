@@ -1,0 +1,106 @@
+
+.committeeContainer {
+
+    margin-bottom: 2rem;
+  
+   
+  
+    @media (max-width: 768px) {
+      padding: 1rem;
+    }
+  }
+  
+  .headerSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    align-items: center;
+    
+  
+    @media (max-width: 576px) {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+  
+  .subTitle{
+    border-left: 3px solid #2CAA61;
+    font-size: 1.25rem;
+    text-align: left;
+    padding-left: 1rem;
+    font-weight: 600;
+   
+  
+    @media (max-width: 768px) {
+      font-size: 1.1rem;
+    }
+  }
+  
+  .charterButton {
+    background: linear-gradient(to right, #00A3B4, #0047CC);
+    border: none;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    border-radius: 50px;
+    color: white;
+    transition: opacity 0.3s ease;
+  
+    &:hover {
+      opacity: 0.9;
+      background: linear-gradient(to right, #00A3B4, #0047CC);
+    }
+  
+    @media (max-width: 576px) {
+      width: 100%;
+    }
+  }
+  
+  .tableWrapper {
+    overflow-x: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    th{
+      text-align: left;
+      font-weight: bold;
+      font-family: 'Adani-Bold'
+    }
+    td{
+      text-align: left;
+    }
+  }
+  
+  .committeeTable {
+    margin-bottom: 0;
+    
+    thead {
+      background-color: #f8f9fa;
+      
+      th {
+        padding: 1rem;
+        font-weight: 600;
+        color: #333;
+        border-bottom-width: 1px;
+      }
+    }
+    
+    tbody {
+      td {
+        padding: 1rem;
+        vertical-align: middle;
+        color: #444;
+        font-size: 1rem;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      thead th,
+      tbody td {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  

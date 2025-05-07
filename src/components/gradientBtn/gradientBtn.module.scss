@@ -1,0 +1,28 @@
+.knowMoreBtn {
+    background: linear-gradient(to right,#1C9C96, #316EB2) !important;
+    border: none !important;
+    padding: 0.5rem 2.5rem !important;
+    font-weight: bold !important;
+    transition: opacity 0.3s ease !important;
+    text-wrap: nowrap !important;
+
+    &:hover {
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); // Adds a subtle shadow on hover
+      transform: translateY(-3px); // Moves the button slightly up on hover for a lift effect
+    }
+  
+    &:active {
+      transform: translateY(0); // Resets the transform on click
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15); // Slightly reduces shadow on click
+    }
+  
+    &:focus {
+      outline: none; // Remove default focus outline
+      box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.6); // Adds a subtle glow on focus for accessibility
+    }
+  }
+
+  .notmiddle{
+    width: min-content;
+    display: block;
+  }

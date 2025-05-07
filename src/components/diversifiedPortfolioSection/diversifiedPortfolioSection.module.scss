@@ -1,0 +1,102 @@
+@use '@styles/partials/variable.scss' as *;
+@use '@styles/partials/_fonts.scss' as *;
+@use '@styles/partials/_mixins.scss' as *;
+
+.diversifiedPortfolioSection {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+
+.diversifiedPortfolio {
+  position: relative;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1.25rem;
+  font-size: 2rem;
+  color: #023399;
+  font-family: 'Adani-SemiBold';
+}
+
+.swiper {
+  padding: 1.25rem 0;
+  width: calc(100% - 30px);
+  @media (max-width: $sm) {
+      max-width: 75vw;
+  }
+}
+
+.swiperSlide {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolioItem {
+  text-align: center;
+  width: 100%; /* Ensures item takes up full width */
+  text-decoration: none;
+}
+
+.portfolioImage {
+  object-fit: fill; /* Ensures image maintains aspect ratio and fills the space */
+  width: 7.875rem;
+  height: 7.5rem;
+}
+
+.portfolioName {
+  margin-top: 0.625rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.swiperButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  padding: 0.625rem;
+  cursor: pointer;
+}
+
+.swiperButtonPrev {
+  left: 0rem; // Original positioning for laptop/desktop
+}
+
+.swiperButtonNext {
+  right: 0rem; // Original positioning for laptop/desktop
+}
+
+.arrowLeft,
+.arrowRight {
+  display: inline-block;
+  width: 0.625rem;
+  height: 0.625rem;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+}
+
+.arrowLeft {
+  transform: rotate(135deg);
+}
+
+.arrowRight {
+  transform: rotate(-45deg);
+}
+
+/* Mobile-specific styles */
+@include media($md, max) {
+  .swiperButtonPrev {
+    left: 0.5rem; // Adjusted for mobile
+  }
+
+  .swiperButtonNext {
+    right: 0.5rem; // Adjusted for mobile
+  }
+
+  .portfolioImage {
+    width: 6rem;
+    height: 6rem;
+  }
+}

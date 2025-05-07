@@ -1,0 +1,58 @@
+@use "@styles/partials/variable.scss" as *;
+@use "@styles/partials/_fonts.scss" as *;
+@use "@styles/partials/_mixins.scss" as *;
+
+.RegulatoryReportsSection {
+  width: 100%;
+  padding: 2rem 1rem;
+  text-align: center;
+
+  .Title {
+    font-size: 2rem;
+    text-align: left;
+    color: #003366;
+    margin-bottom: 1.5rem;
+    font-family: "Adani-SemiBold";
+
+  }
+
+  .Select {
+    border: 1px solid #d1d5db; // Light gray border
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+
+    &:focus {
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 0.2rem rgba(59, 130, 246, 0.25);
+    }
+  }
+
+  .DownloadButton {
+    background: linear-gradient(to right, #087DAA, #1960AF, #554EA1, #821787, #A8266A, #BD274F);
+    border: none;
+    color: white;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background 0.3s ease;
+    width: 100%;
+
+    &:hover {
+      // background: linear-gradient(90deg, #6fb1fc, #4364f7, #0052d4);
+    }
+  }
+
+  // Media query for responsiveness
+  @include media-min-max($sm, $md) {
+    .Select {
+      font-size: 0.9rem;
+    }
+    .DownloadButton {
+      font-size: 0.9rem;
+      padding: 0.4rem 1.5rem;
+    }
+  }
+}

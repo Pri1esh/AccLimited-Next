@@ -1,0 +1,130 @@
+@use '@styles/partials/variable.scss' as *;
+@use '@styles/partials/_fonts.scss' as *;
+@use '@styles/partials/_mixins.scss' as *;
+
+.mediaCardSection {
+  margin-top: 2rem;
+  padding-block: 2rem;
+  background: transparent
+    linear-gradient(270deg, #bc3851 0%, #78378c 33%, #4a4e9d 68%, #19799a 100%) 0% 0% no-repeat
+    padding-box;
+  background-size: 100% 50%;
+  background-position: bottom;
+
+  @media (max-width: $lg) {
+    background-size: 100% 100%;
+  }
+}
+
+// Variables
+$overlay-color: rgba(0, 0, 0, 0.1);
+$text-color: #ffffff;
+$card-height: 250px;
+$transition-duration: 0.3s;
+$border-radius: 8px;
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin transition($property) {
+  transition: $property $transition-duration ease;
+}
+
+// Styles
+
+.mediaCard {
+  position: relative;
+  border: none;
+  border-radius: $border-radius;
+  overflow: hidden;
+  @include transition(transform);
+
+  &:hover {
+    transform: translateY(-5px);
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .cardImage {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.imageWrapper {
+  position: relative;
+  height: $card-height;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  @include transition(transform);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  // background-color: $overlay-color;
+  @include transition(background-color);
+}
+
+.contentWrapper {
+  @include flex-center;
+  padding: 1.5rem;
+  justify-content: flex-start;
+
+  // For non-first cards, align content to bottom
+  .mediaCard:not(.firstCard) & {
+    align-items: flex-end;
+  }
+}
+
+.title {
+  color: $text-color;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  @media (max-width: $md) {
+    font-size: 1.25rem;
+  }
+}
+
+// First card specific styles
+.firstCard {
+  .contentWrapper {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 2rem;
+
+    @media (max-width: $md) {
+      font-size: 1.75rem;
+    }
+  }
+}
+
+// Responsive adjustments
+@media (max-width: $sm) {
+  .imageWrapper {
+    height: 200px;
+  }
+
+  .contentWrapper {
+    padding: 1rem;
+  }
+}

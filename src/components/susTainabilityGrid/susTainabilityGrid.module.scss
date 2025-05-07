@@ -1,0 +1,95 @@
+@use '@styles/partials/variable.scss' as *;
+@use '@styles/partials/_fonts.scss' as *;
+@use '@styles/partials/_mixins.scss' as *;
+
+.susSection {
+  background-color: #f5f9ff;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  margin-top: 2rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  grid-auto-rows: 250px;
+  grid-auto-flow: dense;
+  gap: 1rem;
+
+  .card {
+    height: 100%;
+    width: 100%;
+
+    @media (min-width: $sm) {
+      &:nth-child(1) {
+        grid-row: 1 / 3;
+        grid-column: 1;
+        @media (max-width: $sm) {
+          grid-row: 1;
+        }
+      }
+      &:nth-child(2) {
+        grid-row: 1;
+        grid-column: 2 / 4;
+      }
+    }
+  }
+
+  @media (max-width: $sm) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+
+    .cardOverlay {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &.cardLarge {
+    grid-column: 1 / -1;
+    aspect-ratio: 21/9;
+
+    @media (max-width: 640px) {
+      aspect-ratio: 16/9;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.cardOverlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: flex-end;
+  padding: 2rem;
+  transition: background-color 0.3s ease;
+
+  h2 {
+    color: white;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+    @media (max-width: 768px) {
+      font-size: 1.25rem;
+    }
+  }
+}

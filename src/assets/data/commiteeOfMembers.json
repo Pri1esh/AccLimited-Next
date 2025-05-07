@@ -1,0 +1,1069 @@
+{
+  "sitecore": {
+    "context": {
+      "visitorIdentificationTimestamp": 638706152358201700,
+      "pageEditing": false,
+      "site": {
+        "name": "AmbujaLimited"
+      },
+      "pageState": "normal",
+      "language": "en",
+      "itemPath": "/investors/committees-of-the-board"
+    },
+    "route": {
+      "name": "Committees Of The Board",
+      "displayName": "Committees Of The Board",
+      "fields": {},
+      "databaseName": "web",
+      "deviceId": "fe5d7fdf-89c0-4d99-9aa3-b5fbd009c9f3",
+      "itemId": "7ce88c27-9ad5-4b95-a4f6-db87fadacd60",
+      "itemLanguage": "en",
+      "itemVersion": 1,
+      "layoutId": "b4627f9a-fae1-4a49-bc15-23ce063ffe2d",
+      "templateId": "dbd3a32c-60ec-4050-b29b-5afd78c8d8b2",
+      "templateName": "App Route",
+      "placeholders": {
+        "header": [
+          {
+            "uid": "55b38a2f-3dee-4550-ba87-941acc5480d1",
+            "componentName": "Header",
+            "dataSource": "{A314458F-50EC-47B5-895F-B5734F504186}",
+            "params": {},
+            "fields": {
+              "logos": [
+                {
+                  "imageTitle": "",
+                  "imageSource": "/-/media/project/ambujalimited/common/logo/ambuja.png",
+                  "imageSourceMobile": "/-/media/project/ambujalimited/common/logo/ambuja.png",
+                  "imageSourceTablet": "/-/media/project/ambujalimited/common/logo/ambuja.png",
+                  "imageAlt": ""
+                },
+                {
+                  "imageTitle": "",
+                  "imageSource": "/-/media/project/ambujalimited/common/logo/adani-cement-logo.png",
+                  "imageSourceMobile": "/-/media/project/ambujalimited/common/logo/adani-cement-logo.png",
+                  "imageSourceTablet": "/-/media/project/ambujalimited/common/logo/adani-cement-logo.png",
+                  "imageAlt": ""
+                }
+              ],
+              "headerLinks": [
+                {
+                  "headerLinkText": "Our Companies",
+                  "headerLink": "https://www.ambujacement.com/about-ambuja",
+                  "headerSubLinks": []
+                },
+                {
+                  "headerLinkText": "About us",
+                  "headerLink": "https://www.ambujacement.com/about-ambuja",
+                  "headerSubLinks": [
+                    {
+                      "headerSubLinkText": "AMBUJA AT A GLANCE",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "VISION and MISSION",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "BOARD AND THE COMMITTEE",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    }
+                  ]
+                },
+                {
+                  "headerLinkText": "Home",
+                  "headerLink": "https://www.ambujacement.com/about-ambuja",
+                  "headerSubLinks": []
+                },
+                {
+                  "headerLinkText": "Products and Services",
+                  "headerLink": "https://www.ambujacement.com/about-ambuja",
+                  "headerSubLinks": []
+                },
+                {
+                  "headerLinkText": "Sustainability",
+                  "headerLink": "https://www.ambujacement.com/about-ambuja",
+                  "headerSubLinks": [
+                    {
+                      "headerSubLinkText": "Climate and Energy",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Corporate social responsibility",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Environment Data",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "ESG Databook",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "ESG Profile",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "ESG Rating",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Health and safety",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Stakeholder engagement",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Sustainability a way of life",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Sustainability reports",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Sustainable Development Ambition 2030",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Waste Management",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Water Stewardship",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    }
+                  ]
+                },
+                {
+                  "headerLinkText": "Contact Us",
+                  "headerLink": "https://www.ambujacement.com/about-ambuja",
+                  "headerSubLinks": []
+                },
+                {
+                  "headerLinkText": "Downloads",
+                  "headerLink": "https://www.ambujacement.com/about-ambuja",
+                  "headerSubLinks": []
+                },
+                {
+                  "headerLinkText": "Investors",
+                  "headerLink": "https://www.ambujacement.com/about-ambuja",
+                  "headerSubLinks": [
+                    {
+                      "headerSubLinkText": "Annual Reports",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Board and Committee Charters",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Board of Directors",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "BRSR (General & Digital)",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Corporate Governance",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Credit Rating",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Disclosure under Regn 30 A",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Dispute Resolution Mechanism",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Financial Results",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Investor Presentations",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Investor Services",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Key Managerial Personnel ",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Policies",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Credit Rating",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Schemes of Arrangements",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Shareholders Information",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Shareholding Patterns",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Subsidiary Financials",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Transfer of unpaid and unclaimed dividends and shares to IEPF",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    }
+                  ]
+                },
+                {
+                  "headerLinkText": "Newsroom",
+                  "headerLink": "https://www.ambujacement.com/about-ambuja",
+                  "headerSubLinks": [
+                    {
+                      "headerSubLinkText": "Advertisements",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Archives",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Media Contact",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Media Kit",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Media Releases",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    }
+                  ]
+                },
+                {
+                  "headerLinkText": "Careers",
+                  "headerLink": "https://www.ambujacement.com/about-ambuja",
+                  "headerSubLinks": []
+                }
+              ],
+              "imageTitle": null,
+              "imageSource": null,
+              "imageSourceMobile": null,
+              "imageSourceTablet": null,
+              "imageAlt": null
+            }
+          },
+          {
+            "uid": "1f1a4a7c-70dc-4ac8-b69e-b08404358449",
+            "componentName": "HeaderTopList",
+            "dataSource": "{93116CA2-42FB-4409-82D7-04D0E1C6933D}",
+            "params": {},
+            "fields": {
+              "logos": null,
+              "headerLinks": [
+                {
+                  "headerLinkText": "Our Companies",
+                  "headerLink": "https://www.ambujacement.com/about-ambuja",
+                  "headerSubLinks": []
+                },
+                {
+                  "headerLinkText": "About us",
+                  "headerLink": "https://www.ambujacement.com/about-ambuja",
+                  "headerSubLinks": [
+                    {
+                      "headerSubLinkText": "AMBUJA AT A GLANCE",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "VISION and MISSION",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "BOARD AND THE COMMITTEE",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    }
+                  ]
+                },
+                {
+                  "headerLinkText": "Downloads",
+                  "headerLink": "https://www.ambujacement.com/about-ambuja",
+                  "headerSubLinks": []
+                },
+                {
+                  "headerLinkText": "Careers",
+                  "headerLink": "https://www.ambujacement.com/about-ambuja",
+                  "headerSubLinks": []
+                },
+                {
+                  "headerLinkText": "Contact Us",
+                  "headerLink": "https://www.ambujacement.com/about-ambuja",
+                  "headerSubLinks": []
+                }
+              ],
+              "imageTitle": null,
+              "imageSource": null,
+              "imageSourceMobile": null,
+              "imageSourceTablet": null,
+              "imageAlt": null
+            }
+          },
+          {
+            "uid": "b8b73f4a-d888-4189-a393-3deb9e030ce7",
+            "componentName": "HeaderBottomList",
+            "dataSource": "{D5CBD383-7644-4E0C-9997-AD2AEFB73FFE}",
+            "params": {},
+            "fields": {
+              "logos": null,
+              "headerLinks": [
+                {
+                  "headerLinkText": "Home",
+                  "headerLink": "https://www.ambujacement.com/about-ambuja",
+                  "headerSubLinks": []
+                },
+                {
+                  "headerLinkText": "Products and Services",
+                  "headerLink": "https://www.ambujacement.com/about-ambuja",
+                  "headerSubLinks": []
+                },
+                {
+                  "headerLinkText": "Sustainability",
+                  "headerLink": "https://www.ambujacement.com/about-ambuja",
+                  "headerSubLinks": [
+                    {
+                      "headerSubLinkText": "Climate and Energy",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Corporate social responsibility",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Environment Data",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "ESG Databook",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "ESG Profile",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "ESG Rating",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Health and safety",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Stakeholder engagement",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Sustainability a way of life",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Sustainability reports",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Sustainable Development Ambition 2030",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Waste Management",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Water Stewardship",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    }
+                  ]
+                },
+                {
+                  "headerLinkText": "Investors",
+                  "headerLink": "https://www.ambujacement.com/about-ambuja",
+                  "headerSubLinks": [
+                    {
+                      "headerSubLinkText": "Annual Reports",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Board and Committee Charters",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Board of Directors",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "BRSR (General & Digital)",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Corporate Governance",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Credit Rating",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Disclosure under Regn 30 A",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Dispute Resolution Mechanism",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Financial Results",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Investor Presentations",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Investor Services",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Key Managerial Personnel ",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Policies",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Credit Rating",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Schemes of Arrangements",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Shareholders Information",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Shareholding Patterns",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Subsidiary Financials",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Transfer of unpaid and unclaimed dividends and shares to IEPF",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    }
+                  ]
+                },
+                {
+                  "headerLinkText": "Newsroom",
+                  "headerLink": "https://www.ambujacement.com/about-ambuja",
+                  "headerSubLinks": [
+                    {
+                      "headerSubLinkText": "Advertisements",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Archives",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Media Contact",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Media Kit",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    },
+                    {
+                      "headerSubLinkText": "Media Releases",
+                      "headerSubLink": "https://www.ambujacement.com/about-ambuja"
+                    }
+                  ]
+                }
+              ],
+              "imageTitle": null,
+              "imageSource": null,
+              "imageSourceMobile": null,
+              "imageSourceTablet": null,
+              "imageAlt": null
+            }
+          }
+        ],
+        "main": [
+          {
+            "uid": "05446e7b-d3e9-4452-bec7-9e1de05dc1f2",
+            "componentName": "CommonPageData",
+            "dataSource": "{21A22AE2-CF29-4BFC-A754-46635CFB0DA2}",
+            "params": {},
+            "fields": {
+              "heading": "Mandatory Committees",
+              "subHeading": "Mandatory Committees",
+              "imageTitle": "Committees Of The Board",
+              "imageSource": "/-/media/project/ambujalimited/banner-images/committees-of-the-board.png",
+              "imageSourceMobile": "",
+              "imageSourceTablet": "",
+              "imageAlt": ""
+            }
+          },
+          {
+            "uid": "a6f402e4-69e7-44df-a398-e60f7a65949c",
+            "componentName": "CommitteList",
+            "dataSource": "{40DBA204-C1CC-42B4-8DCC-84AC8C85B195}",
+            "params": {},
+            "fields": [
+              {
+                "sectionTitle": "AUDIT COMMITTEE",
+                "pdfDownload": "/sitecore/media-library/project/ambujalimited/investor/annual-report/2020/ambuja-cement-iar-2020-300721-for-web",
+                "buttontext": "Charter",
+                "members": [
+                  {
+                    "name": "Mr. Ameet Desai",
+                    "role": "Member (Non-Executive Independent Director)"
+                  },
+                  {
+                    "name": "Mr. Maheswar Sahu",
+                    "role": "Member (Non-Executive Independent Director)"
+                  },
+                  {
+                    "name": "Mr. Rajnish Kumar",
+                    "role": "Chairman (Non-Executive Independent Director)"
+                  }
+                ]
+              },
+              {
+                "sectionTitle": "NOMINATION AND REMUNERATION COMMITTEE",
+                "pdfDownload": "/sitecore/media-library/project/ambujalimited/investor/annual-report/2020/ambuja-cement-iar-2020-300721-for-web",
+                "buttontext": "Charter",
+                "members": [
+                  {
+                    "name": "Mr. Ameet Desai",
+                    "role": "Member (Non-Executive Independent Director)"
+                  },
+                  {
+                    "name": "Mr. Maheswar Sahu",
+                    "role": "Member (Non-Executive Independent Director)"
+                  },
+                  {
+                    "name": "Ms. Purvi Sheth",
+                    "role": "Chairperson (Non-Executive Independent Director)"
+                  },
+                  {
+                    "name": "Mr. Rajnish Kumar",
+                    "role": "Member (Non-Executive Independent Director)"
+                  }
+                ]
+              },
+              {
+                "sectionTitle": "STAKEHOLDERS' RELATIONSHIP COMMITTEE",
+                "pdfDownload": "/sitecore/media-library/project/ambujalimited/investor/investor-presentation/pdf/2024/adani-portfolio-h1fy25-results-compendium",
+                "buttontext": "Charter",
+                "members": [
+                  {
+                    "name": "Mr. Ameet Desai",
+                    "role": "Member (Non-Executive Independent Director)"
+                  },
+                  {
+                    "name": "Mr. Karan Adani",
+                    "role": "Member (Non-Executive Director)"
+                  },
+                  {
+                    "name": "Mr. Maheswar Sahu",
+                    "role": "Member (Non-Executive Independent Director)"
+                  },
+                  {
+                    "name": "Mr. Karan Adani",
+                    "role": "Member (Whole-Time Director & CEO)"
+                  }
+                ]
+              },
+              {
+                "sectionTitle": "CORPORATE SOCIAL RESPONSIBILITY COMMITTEE",
+                "pdfDownload": "/sitecore/media-library/project/ambujalimited/investor/annual-report/2020/ambuja-cement-iar-2020-300721-for-web",
+                "buttontext": "Charter",
+                "members": [
+                  {
+                    "name": "Mr. Karan Adani",
+                    "role": "Member (Non-Executive Director)"
+                  },
+                  {
+                    "name": "Mr. Maheswar Sahu",
+                    "role": "Member (Non-Executive Independent Director)"
+                  },
+                  {
+                    "name": "Mr. Rajnish Kumar",
+                    "role": "Chairman (Non-Executive Independent Director)"
+                  },
+                  {
+                    "name": "Ms. Purvi Sheth",
+                    "role": "Member (Non-Executive Independent Director)"
+                  }
+                ]
+              },
+              {
+                "sectionTitle": "RISK MANAGEMENT COMMITTEE",
+                "pdfDownload": "/sitecore/media-library/project/ambujalimited/investor/annual-report/2020/annual-report-2020-report-and-accounts-of-subsidiary-companies",
+                "buttontext": "Charter",
+                "members": [
+                  {
+                    "name": "Mr. Ameet Desai",
+                    "role": "Chairman (Non-Executive Independent Director)"
+                  },
+                  {
+                    "name": "Mr. Rajnish Kumar",
+                    "role": "Chairman (Non-Executive Independent Director)"
+                  },
+                  {
+                    "name": "Ms. Purvi Sheth",
+                    "role": "Member (Non-Executive Independent Director)"
+                  },
+                  {
+                    "name": "Mr. Ajay Kapur",
+                    "role": "Member (Whole-Time Director & CEO)"
+                  }
+                ]
+              },
+              {
+                "sectionTitle": "LEGAL, REGULATORY & TAX COMMITTEE (SUB-COMMITTEE TO RISK MANAGEMENT COMMITTEE)",
+                "pdfDownload": "/sitecore/media-library/project/ambujalimited/investor/annual-report/2020/ambuja-cement-iar-2020-300721-for-web",
+                "buttontext": "Charter",
+                "members": [
+                  {
+                    "name": "Mr. Ameet Desai",
+                    "role": "Chairman (Non-Executive Independent Director)"
+                  },
+                  {
+                    "name": "Mr. Rajnish Kumar",
+                    "role": "Chairman (Non-Executive Independent Director)"
+                  },
+                  {
+                    "name": "Mr. Maheswar Sahu",
+                    "role": "Member (Non-Executive Independent Director)"
+                  },
+                  {
+                    "name": "Mr. Ajay Kapur",
+                    "role": "Member (Whole-Time Director & CEO)"
+                  }
+                ]
+              },
+              {
+                "sectionTitle": "LEGAL, REGULATORY & TAX COMMITTEE (SUB-COMMITTEE TO RISK MANAGEMENT COMMITTEE)",
+                "pdfDownload": "/sitecore/media-library/project/ambujalimited/investor/annual-report/2020/ambuja-cement-iar-2020-300721-for-web",
+                "buttontext": "Charter",
+                "members": [
+                  {
+                    "name": "Mr. Ameet Desai",
+                    "role": "Chairman (Non-Executive Independent Director)"
+                  },
+                  {
+                    "name": "Mr. Rajnish Kumar",
+                    "role": "Chairman (Non-Executive Independent Director)"
+                  },
+                  {
+                    "name": "Mr. Maheswar Sahu",
+                    "role": "Member (Non-Executive Independent Director)"
+                  },
+                  {
+                    "name": "Ms. Purvi Sheth",
+                    "role": "Chairperson (Non-Executive Independent Director)"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "footer": [
+          {
+            "uid": "c63afa06-d0ef-4eef-b87d-8155ecbe270c",
+            "componentName": "Footer",
+            "dataSource": "{9A85CEFA-0515-4EB4-8368-9C1789B2E49C}",
+            "params": {},
+            "fields": {
+              "footerData": {
+                "background": {
+                  "imageSource": "/-/media/project/ambujalimited/common/footer/group-449.png",
+                  "imageSourceMobile": "/-/media/project/ambujalimited/common/footer/group-454.png",
+                  "imageSourceTablet": "",
+                  "imageAlt": "Footer Background Image"
+                },
+                "footerMainNavigations": [
+                  {
+                    "heading": "Company",
+                    "link": "",
+                    "gtmData": {
+                      "event": "",
+                      "category": "",
+                      "title": "",
+                      "label": "",
+                      "page_type": "Committees Of The Board",
+                      "sub_category": ""
+                    },
+                    "footerLinks": [
+                      {
+                        "link": "/",
+                        "linkText": "About Us",
+                        "target": "",
+                        "gtmData": {
+                          "event": "Event",
+                          "category": "Category",
+                          "title": "Title",
+                          "label": "Label",
+                          "page_type": "Committees Of The Board",
+                          "sub_category": "Sub_Category"
+                        }
+                      },
+                      {
+                        "link": "/",
+                        "linkText": "Our Companies",
+                        "target": "",
+                        "gtmData": {
+                          "event": "",
+                          "category": "",
+                          "title": "",
+                          "label": "",
+                          "page_type": "Committees Of The Board",
+                          "sub_category": ""
+                        }
+                      },
+                      {
+                        "link": "",
+                        "linkText": "Careers",
+                        "target": "",
+                        "gtmData": {
+                          "event": "",
+                          "category": "",
+                          "title": "",
+                          "label": "",
+                          "page_type": "Committees Of The Board",
+                          "sub_category": ""
+                        }
+                      },
+                      {
+                        "link": "",
+                        "linkText": "Downloads",
+                        "target": "",
+                        "gtmData": {
+                          "event": "",
+                          "category": "",
+                          "title": "",
+                          "label": "",
+                          "page_type": "Committees Of The Board",
+                          "sub_category": ""
+                        }
+                      },
+                      {
+                        "link": "",
+                        "linkText": "Contact Us",
+                        "target": "",
+                        "gtmData": {
+                          "event": "",
+                          "category": "",
+                          "title": "",
+                          "label": "",
+                          "page_type": "Committees Of The Board",
+                          "sub_category": ""
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "heading": "Investors",
+                    "link": "",
+                    "gtmData": {
+                      "event": "",
+                      "category": "",
+                      "title": "",
+                      "label": "",
+                      "page_type": "Committees Of The Board",
+                      "sub_category": ""
+                    },
+                    "footerLinks": []
+                  },
+                  {
+                    "heading": "Newsroom",
+                    "link": "",
+                    "gtmData": {
+                      "event": "",
+                      "category": "",
+                      "title": "",
+                      "label": "",
+                      "page_type": "Committees Of The Board",
+                      "sub_category": ""
+                    },
+                    "footerLinks": []
+                  },
+                  {
+                    "heading": "Product & Services",
+                    "link": "",
+                    "gtmData": {
+                      "event": "",
+                      "category": "",
+                      "title": "",
+                      "label": "",
+                      "page_type": "Committees Of The Board",
+                      "sub_category": ""
+                    },
+                    "footerLinks": []
+                  },
+                  {
+                    "heading": "Sustainability",
+                    "link": "",
+                    "gtmData": {
+                      "event": "",
+                      "category": "",
+                      "title": "",
+                      "label": "",
+                      "page_type": "Committees Of The Board",
+                      "sub_category": ""
+                    },
+                    "footerLinks": []
+                  },
+                  {
+                    "heading": "Our Websites",
+                    "link": "",
+                    "gtmData": {
+                      "event": "",
+                      "category": "",
+                      "title": "",
+                      "label": "",
+                      "page_type": "Committees Of The Board",
+                      "sub_category": ""
+                    },
+                    "footerLinks": [
+                      {
+                        "link": "",
+                        "linkText": "ACC Limited",
+                        "target": "",
+                        "gtmData": {
+                          "event": "",
+                          "category": "",
+                          "title": "",
+                          "label": "",
+                          "page_type": "Committees Of The Board",
+                          "sub_category": ""
+                        }
+                      },
+                      {
+                        "link": "",
+                        "linkText": "Sanghi Industries Limited",
+                        "target": "",
+                        "gtmData": {
+                          "event": "",
+                          "category": "",
+                          "title": "",
+                          "label": "",
+                          "page_type": "Committees Of The Board",
+                          "sub_category": ""
+                        }
+                      },
+                      {
+                        "link": "",
+                        "linkText": "ACC Help",
+                        "target": "",
+                        "gtmData": {
+                          "event": "",
+                          "category": "",
+                          "title": "",
+                          "label": "",
+                          "page_type": "Committees Of The Board",
+                          "sub_category": ""
+                        }
+                      },
+                      {
+                        "link": "",
+                        "linkText": "Ambuja Help",
+                        "target": "",
+                        "gtmData": {
+                          "event": "",
+                          "category": "",
+                          "title": "",
+                          "label": "",
+                          "page_type": "Committees Of The Board",
+                          "sub_category": ""
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "socialLinks": [
+                  {
+                    "heading": "Footer Social Link",
+                    "link": null,
+                    "socialLinksLogos": [
+                      {
+                        "iconImg": "/-/media/project/ambujalimited/common/footer/twitter.svg",
+                        "iconClass": "",
+                        "gtmData": {
+                          "event": "",
+                          "category": "",
+                          "title": "",
+                          "label": "",
+                          "page_type": "Committees Of The Board",
+                          "sub_category": ""
+                        },
+                        "link": "https://x.com/",
+                        "linkText": "Twitter",
+                        "target": ""
+                      },
+                      {
+                        "iconImg": "/-/media/project/ambujalimited/common/footer/linkedin.svg",
+                        "iconClass": "",
+                        "gtmData": {
+                          "event": "",
+                          "category": "",
+                          "title": "",
+                          "label": "",
+                          "page_type": "Committees Of The Board",
+                          "sub_category": ""
+                        },
+                        "link": "",
+                        "linkText": "LinkedIn",
+                        "target": ""
+                      },
+                      {
+                        "iconImg": "/-/media/project/ambujalimited/common/footer/facebook.svg",
+                        "iconClass": "",
+                        "gtmData": {
+                          "event": "",
+                          "category": "",
+                          "title": "",
+                          "label": "",
+                          "page_type": "Committees Of The Board",
+                          "sub_category": ""
+                        },
+                        "link": "",
+                        "linkText": "Facebook",
+                        "target": ""
+                      },
+                      {
+                        "iconImg": "/-/media/project/ambujalimited/common/footer/youtube.svg",
+                        "iconClass": "",
+                        "gtmData": {
+                          "event": "",
+                          "category": "",
+                          "title": "",
+                          "label": "",
+                          "page_type": "Committees Of The Board",
+                          "sub_category": ""
+                        },
+                        "link": "",
+                        "linkText": "Youtube",
+                        "target": ""
+                      },
+                      {
+                        "iconImg": "/-/media/project/ambujalimited/common/footer/instagram.svg",
+                        "iconClass": "",
+                        "gtmData": {
+                          "event": "",
+                          "category": "",
+                          "title": "",
+                          "label": "",
+                          "page_type": "Committees Of The Board",
+                          "sub_category": ""
+                        },
+                        "link": "",
+                        "linkText": "Instagram",
+                        "target": ""
+                      }
+                    ]
+                  }
+                ],
+                "logo": {
+                  "imageTitle": "Footer Logo",
+                  "imageSource": "/-/media/project/ambujalimited/common/footer/group-386.png",
+                  "imageSourceMobile": "/-/media/project/ambujalimited/common/footer/group-386.png",
+                  "imageSourceTablet": "/-/media/project/ambujalimited/common/footer/group-386.png",
+                  "imageAlt": ""
+                },
+                "buCopyright": {
+                  "heading": "Footer Copyright",
+                  "subHeading": "© Copyright 2024 Adani Group",
+                  "linkModels": [
+                    {
+                      "link": "/",
+                      "linkText": "Sitemap",
+                      "target": "",
+                      "gtmData": {
+                        "event": "",
+                        "category": "",
+                        "title": "",
+                        "label": "",
+                        "page_type": "Committees Of The Board",
+                        "sub_category": ""
+                      }
+                    },
+                    {
+                      "link": "/",
+                      "linkText": "Privacy Policy",
+                      "target": "",
+                      "gtmData": {
+                        "event": "",
+                        "category": "",
+                        "title": "",
+                        "label": "",
+                        "page_type": "Committees Of The Board",
+                        "sub_category": ""
+                      }
+                    },
+                    {
+                      "link": "",
+                      "linkText": "Legal Disclaimer",
+                      "target": "",
+                      "gtmData": {
+                        "event": "",
+                        "category": "",
+                        "title": "",
+                        "label": "",
+                        "page_type": "Committees Of The Board",
+                        "sub_category": ""
+                      }
+                    },
+                    {
+                      "link": "",
+                      "linkText": "Terms and Conditions",
+                      "target": "",
+                      "gtmData": {
+                        "event": "",
+                        "category": "",
+                        "title": "",
+                        "label": "",
+                        "page_type": "Committees Of The Board",
+                        "sub_category": ""
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

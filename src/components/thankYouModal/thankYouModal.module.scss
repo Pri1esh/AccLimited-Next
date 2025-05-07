@@ -1,0 +1,149 @@
+.modalBackdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+}
+
+.modalContent {
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.modalWrapper {
+  padding: 20px;
+  text-align: center;
+}
+
+.modalHeader {
+  border-bottom: none;
+  padding-bottom: 0;
+  justify-content: center;
+}
+
+.modalTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-top: 10px;
+}
+
+.modalBody {
+  padding: 20px 30px;
+}
+
+.modalFooter {
+  border-top: none;
+  justify-content: center;
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+
+.message {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.closeButton {
+  padding: 10px 40px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+  transition: all 0.3s ease;
+
+  &:hover, &:focus {
+    background-color: #45a049;  /* Slightly darker green */
+    border-color: #45a049;      /* Slightly darker green */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.checkmarkContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.checkmarkCircle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  transform: scale(0);
+  opacity: 0;
+
+  &.animate {
+    animation: scaleIn 0.5s ease-out forwards;
+  }
+}
+
+.checkIcon {
+  width: 60px;
+  height: 60px;
+  color: #4CAF50;
+  animation: fadeIn 0.5s ease-out 0.5s forwards;
+  opacity: 0;
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 576px) {
+  .modalContent {
+    max-width: 90%;
+  }
+
+  .modalTitle {
+    font-size: 1.75rem;
+  }
+
+  .message {
+    font-size: 1rem;
+  }
+
+  .checkmarkCircle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .checkIcon {
+    width: 50px;
+    height: 50px;
+  }
+}

@@ -1,0 +1,87 @@
+// Variables
+$overlay-bg-color: rgba(0, 0, 0, 0.4);
+$overlay-bg-color-hover: rgba(0, 0, 0, 0.6);
+$card-min-height: 300px;
+$transition-duration: 0.3s;
+$title-font-size: 2rem;
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin transition($property) {
+  transition: $property $transition-duration ease;
+}
+
+// Styles
+.visionBrandSection {
+  padding: 0;
+  background-color: #f5f9ff;
+}
+
+.cardContainer {
+  margin-block: 2rem;
+  .card {
+    height: 100%;
+    @include transition(transform);
+    border-radius: 15px;
+    overflow: hidden;
+
+    &:hover {
+      transform: scale(1.02);
+      cursor: pointer;
+
+      .cardOverlay {
+        background-color: $overlay-bg-color-hover;
+      }
+    }
+  }
+
+  .cardImage {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    min-height: $card-min-height;
+  }
+
+  .cardOverlay {
+    @include flex-center;
+    background-color: $overlay-bg-color;
+    @include transition(background-color);
+  }
+
+  .cardTitle {
+    text-align: center;
+    font-weight: bold;
+    font-size: $title-font-size;
+    color: white;
+
+    @media (max-width: 768px) {
+      font-size: calc(#{$title-font-size} * 0.8);
+    }
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .visionBrandSection {
+    padding: 0;
+  }
+
+  .card {
+    margin-bottom: 1rem;
+  }
+}
+
+// Optional hover effects
+.card {
+  &:hover {
+    .cardTitle {
+      transform: scale(1.05);
+      @include transition(transform);
+    }
+  }
+}

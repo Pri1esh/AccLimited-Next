@@ -1,0 +1,20 @@
+@use "@styles/partials/variable.scss" as *;
+@use "@styles/partials/_fonts.scss" as *;
+@use "@styles/partials/_mixins.scss" as *;
+
+.visionMissionTile {
+  justify-content: center;
+  margin-top: 2rem;
+  @media (max-width: 576px) {
+    margin-top: 1rem;
+  }
+  .card {
+    .cardImage {
+      width: 100%;
+      margin-bottom: 2rem;
+      @media (max-width: 576px) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

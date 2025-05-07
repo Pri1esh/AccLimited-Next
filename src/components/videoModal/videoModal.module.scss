@@ -1,0 +1,106 @@
+// Variables
+$modal-bg: rgba(0, 0, 0, 0.85);
+$close-button-size: 36px;
+$transition-duration: 0.3s;
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin transition($property) {
+  transition: $property $transition-duration ease;
+}
+
+// Modal styles
+.videoModal {
+  :global(.modal-content) {
+    background-color: transparent;
+    border: none;
+  }
+
+  :global(.modal-dialog) {
+    max-width: 90%;
+    width: 1024px;
+    margin: 1.75rem auto;
+  }
+
+  :global(.modal-backdrop.show) {
+    opacity: 0.85;
+  }
+
+  .videoPlayer {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+}
+
+.modalHeader {
+  border: none;
+  padding: 0.5rem;
+  position: absolute;
+  right: -$close-button-size;
+  top: -$close-button-size;
+  z-index: 2;
+}
+
+.closeButton {
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  width: $close-button-size;
+  height: $close-button-size;
+  @include flex-center;
+  cursor: pointer;
+  @include transition(transform);
+  
+  &:hover {
+    transform: rotate(90deg);
+  }
+
+  svg {
+    color: #000;
+    stroke-width: 2.5;
+  }
+}
+
+.modalBody {
+  padding: 0;
+  background-color: transparent;
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; // 16:9 aspect ratio
+  height: 0;
+  background-color: black;
+  border-radius: 8px;
+  overflow: hidden;
+  
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .videoModal {
+    :global(.modal-dialog) {
+      max-width: 95%;
+      margin: 1rem auto;
+    }
+  }
+
+  .modalHeader {
+    right: 0;
+    top: -$close-button-size - 10px;
+  }
+}
+

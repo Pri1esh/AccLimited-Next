@@ -1,0 +1,959 @@
+{
+  "sitecore": {
+    "context": {
+      "visitorIdentificationTimestamp": 638766672274618900,
+      "pageEditing": false,
+      "site": {
+        "name": "AmbujaLimited"
+      },
+      "pageState": "normal",
+      "language": "en",
+      "itemPath": "/"
+    },
+    "route": {
+      "name": "Home",
+      "displayName": "Home",
+      "fields": {},
+      "databaseName": "web",
+      "deviceId": "fe5d7fdf-89c0-4d99-9aa3-b5fbd009c9f3",
+      "itemId": "9d3a1ca4-c594-4ed2-b474-8ca96e45fe94",
+      "itemLanguage": "en",
+      "itemVersion": 1,
+      "layoutId": "b4627f9a-fae1-4a49-bc15-23ce063ffe2d",
+      "templateId": "3008a7f0-e878-4c46-8756-b84fa89569fb",
+      "templateName": "Home",
+      "placeholders": {
+        "header": [
+          {
+            "uid": "2f9333ec-60cb-4c1a-ad40-0bf793c7027b",
+            "componentName": "Header",
+            "dataSource": "{A314458F-50EC-47B5-895F-B5734F504186}",
+            "params": {},
+            "fields": {
+              "logos": [
+                {
+                  "imageTitle": "",
+                  "imageSource": "/-/media/project/ambujalimited/common/logo/ambuja.png",
+                  "imageSourceMobile": "/-/media/project/ambujalimited/common/logo/ambuja.png",
+                  "imageSourceTablet": "/-/media/project/ambujalimited/common/logo/ambuja.png",
+                  "imageAlt": ""
+                },
+                {
+                  "imageTitle": "",
+                  "imageSource": "/-/media/project/ambujalimited/common/logo/adani-cement-logo.png",
+                  "imageSourceMobile": "/-/media/project/ambujalimited/common/logo/adani-cement-logo.png",
+                  "imageSourceTablet": "/-/media/project/ambujalimited/common/logo/adani-cement-logo.png",
+                  "imageAlt": ""
+                }
+              ],
+              "headerLinks": [
+                {
+                  "headerLinkText": "Our Companies",
+                  "headerLink": "",
+                  "target": "",
+                  "headerSubLinks": [
+                    {
+                      "headerSubLinkText": "Adani Group",
+                      "headerSubLink": "https://www.adani.com/",
+                      "target": "_blank"
+                    },
+                    {
+                      "headerSubLinkText": "ACC",
+                      "headerSubLink": "https://www.acclimited.com/",
+                      "target": "_blank"
+                    },
+                    {
+                      "headerSubLinkText": "Sanghai Cement",
+                      "headerSubLink": "https://www.sanghicement.com/",
+                      "target": "_blank"
+                    },
+                    {
+                      "headerSubLinkText": "Alccofine",
+                      "headerSubLink": "https://www.alccofine.com/",
+                      "target": "_blank"
+                    },
+                    {
+                      "headerSubLinkText": "Ambuja Foundation",
+                      "headerSubLink": "https://www.ambujacementfoundation.org/",
+                      "target": "_blank"
+                    }
+                  ]
+                },
+                {
+                  "headerLinkText": "About us",
+                  "headerLink": "/about-ambuja",
+                  "target": "",
+                  "headerSubLinks": [
+                    {
+                      "headerSubLinkText": "Ambuja at a Glance",
+                      "headerSubLink": "/about-ambuja/ambuja-at-a-glance",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Awards and Recognition",
+                      "headerSubLink": "/about-ambuja/awards-and-recognition",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Industry Leadership",
+                      "headerSubLink": "/about-ambuja/industry-leadership",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "The Brand Story",
+                      "headerSubLink": "/about-ambuja/the-brand-story",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Vision And Mission",
+                      "headerSubLink": "/about-ambuja/vision-and-mission",
+                      "target": ""
+                    }
+                  ]
+                },
+                {
+                  "headerLinkText": "Home",
+                  "headerLink": "https://uat-s.ambujacement.com/",
+                  "target": "",
+                  "headerSubLinks": []
+                },
+                {
+                  "headerLinkText": "Products and Services",
+                  "headerLink": "https://www.ambujahelp.in/",
+                  "target": "_blank",
+                  "headerSubLinks": []
+                },
+                {
+                  "headerLinkText": "Sustainability",
+                  "headerLink": "/Sustainability",
+                  "target": "",
+                  "headerSubLinks": [
+                    {
+                      "headerSubLinkText": "Climate and Energy",
+                      "headerSubLink": "/Sustainability/environment-and-energy",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Corporate social responsibility",
+                      "headerSubLink": "/Sustainability/Corporate-social-responsibility",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Environment Data",
+                      "headerSubLink": "/Sustainability/environment-data",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "ESG Databook",
+                      "headerSubLink": "/Sustainability/esg-databook",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "ESG Profile",
+                      "headerSubLink": "https://esg.churchgatepartners.com/login/companyprofile?id=330037003400240024004100530048004F004B0041004E0041004E00590041004100560041004E004900410053004800570049004E00490024002400",
+                      "target": "_blank"
+                    },
+                    {
+                      "headerSubLinkText": "ESG Rating",
+                      "headerSubLink": "/Sustainability/esg-rating-sustainability",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Health and safety",
+                      "headerSubLink": "/Sustainability/health-and-safety",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Stakeholder engagement",
+                      "headerSubLink": "/Sustainability/Stakeholder-engagement",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Sustainability a way of life",
+                      "headerSubLink": "/Sustainability/Sustainability-a-way-of-life",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Sustainability reports",
+                      "headerSubLink": "/Sustainability/sustainability-reports",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Sustainable Development Ambition 2030",
+                      "headerSubLink": "/Sustainability/Sustainable-Development-Ambition-2030",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Waste Management",
+                      "headerSubLink": "/Sustainability/waste-management",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Water Stewardship",
+                      "headerSubLink": "/Sustainability/water-stewardship",
+                      "target": ""
+                    }
+                  ]
+                },
+                {
+                  "headerLinkText": "Contact Us",
+                  "headerLink": "/Contact-us",
+                  "target": "",
+                  "headerSubLinks": []
+                },
+                {
+                  "headerLinkText": "Investors",
+                  "headerLink": "/investors",
+                  "target": "",
+                  "headerSubLinks": [
+                    {
+                      "headerSubLinkText": "Annual Reports",
+                      "headerSubLink": "/Investors/annual-reports",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Board and Committee Charters",
+                      "headerSubLink": "/investors/committees-of-the-board",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "BRSR (General & Digital)",
+                      "headerSubLink": "/investors/BRSR-(general-&-digital)",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Corporate Governance",
+                      "headerSubLink": "/investors/corporate-governance",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Credit Rating",
+                      "headerSubLink": "/investors/credit-rating",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Disclosure under Regn 30 A",
+                      "headerSubLink": "/Investors/disclosure-under-regn-30-a",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Dispute Resolution Mechanism",
+                      "headerSubLink": "/Investors/dispute-resolution-mechanism",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Financial Results",
+                      "headerSubLink": "/Investors/financial-results",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Investor Presentations",
+                      "headerSubLink": "/Investors/investor-presentations",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Investor Services",
+                      "headerSubLink": "/Investors/investor-services",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Key Management Personnel",
+                      "headerSubLink": "/Investors/key-management-personnel",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Policies",
+                      "headerSubLink": "/Investors/policies",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Credit Rating",
+                      "headerSubLink": "/Investors/research-coverage",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Schemes of Arrangements",
+                      "headerSubLink": "/investors/schemes-of-arrangements",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Shareholders Information",
+                      "headerSubLink": "/Investors/shareholders-information",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Shareholding Patterns",
+                      "headerSubLink": "/Investors/shareholding-patterns",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Subsidiary Financials",
+                      "headerSubLink": "/investors/annual-reports",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Transfer of unpaid and unclaimed dividends and shares to IEPF",
+                      "headerSubLink": "/Investors/transfer-of-unpaid-and-unclaimed-dividends-and-shares-to-iepf",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Disclosure 46 of SEBI (LODR) Regulations",
+                      "headerSubLink": "/investors/disclosure-46-of-SEBI-LODR-regulations",
+                      "target": ""
+                    }
+                  ]
+                },
+                {
+                  "headerLinkText": "Newsroom",
+                  "headerLink": "/newsroom",
+                  "target": "",
+                  "headerSubLinks": [
+                    {
+                      "headerSubLinkText": "Media Releases",
+                      "headerSubLink": "/newsroom/media-releases",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Media Contact",
+                      "headerSubLink": "/newsroom/media-contact",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Media Kit",
+                      "headerSubLink": "/newsroom/media-kit",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Archives",
+                      "headerSubLink": "/newsroom/archives",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Advertisements",
+                      "headerSubLink": "/newsroom/advertisements",
+                      "target": ""
+                    }
+                  ]
+                },
+                {
+                  "headerLinkText": "Careers",
+                  "headerLink": "https://careers.adani.com/",
+                  "target": "_blank",
+                  "headerSubLinks": []
+                }
+              ],
+              "imageTitle": null,
+              "imageSource": null,
+              "imageSourceMobile": null,
+              "imageSourceTablet": null,
+              "imageAlt": null
+            }
+          },
+          {
+            "uid": "b8ddcb77-5e35-44b6-a6c8-cbe97c693884",
+            "componentName": "HeaderTopList",
+            "dataSource": "{93116CA2-42FB-4409-82D7-04D0E1C6933D}",
+            "params": {},
+            "fields": {
+              "logos": null,
+              "headerLinks": [
+                {
+                  "headerLinkText": "Our Companies",
+                  "headerLink": "",
+                  "target": "",
+                  "headerSubLinks": [
+                    {
+                      "headerSubLinkText": "Adani Group",
+                      "headerSubLink": "https://www.adani.com/",
+                      "target": "_blank"
+                    },
+                    {
+                      "headerSubLinkText": "ACC",
+                      "headerSubLink": "https://www.acclimited.com/",
+                      "target": "_blank"
+                    },
+                    {
+                      "headerSubLinkText": "Sanghi Cement",
+                      "headerSubLink": "https://www.sanghicement.com/",
+                      "target": "_blank"
+                    },
+                    {
+                      "headerSubLinkText": "Alccofine",
+                      "headerSubLink": "https://www.alccofine.com/",
+                      "target": "_blank"
+                    },
+                    {
+                      "headerSubLinkText": "Ambuja Foundation",
+                      "headerSubLink": "https://www.ambujacementfoundation.org/",
+                      "target": "_blank"
+                    }
+                  ]
+                },
+                {
+                  "headerLinkText": "About us",
+                  "headerLink": "/about-ambuja",
+                  "target": "",
+                  "headerSubLinks": [
+                    {
+                      "headerSubLinkText": "Vision and Mission",
+                      "headerSubLink": "/about-ambuja/vision-and-mission",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "The Brand Story",
+                      "headerSubLink": "/about-ambuja/the-brand-story",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Ambuja at a Glance",
+                      "headerSubLink": "/about-ambuja/ambuja-at-a-glance",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Awards and Recognition",
+                      "headerSubLink": "/about-ambuja/awards-and-recognition",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Industry Leadership",
+                      "headerSubLink": "/about-ambuja/industry-leadership",
+                      "target": ""
+                    }
+                  ]
+                },
+                {
+                  "headerLinkText": "Careers",
+                  "headerLink": "https://careers.adani.com/",
+                  "target": "_blank",
+                  "headerSubLinks": []
+                },
+                {
+                  "headerLinkText": "Contact Us",
+                  "headerLink": "/Contact-us",
+                  "target": "",
+                  "headerSubLinks": []
+                }
+              ],
+              "imageTitle": null,
+              "imageSource": null,
+              "imageSourceMobile": null,
+              "imageSourceTablet": null,
+              "imageAlt": null
+            }
+          },
+          {
+            "uid": "40deff5d-52dd-4e76-8216-5f89508bf059",
+            "componentName": "HeaderBottomList",
+            "dataSource": "{D5CBD383-7644-4E0C-9997-AD2AEFB73FFE}",
+            "params": {},
+            "fields": {
+              "logos": null,
+              "headerLinks": [
+                {
+                  "headerLinkText": "Home",
+                  "headerLink": "https://uat-s.ambujacement.com/",
+                  "target": "",
+                  "headerSubLinks": []
+                },
+                {
+                  "headerLinkText": "Products and Services",
+                  "headerLink": "https://www.ambujahelp.in/all-products",
+                  "target": "_blank",
+                  "headerSubLinks": []
+                },
+                {
+                  "headerLinkText": "Sustainability",
+                  "headerLink": "/Sustainability",
+                  "target": "",
+                  "headerSubLinks": [
+                    {
+                      "headerSubLinkText": "Climate and Energy",
+                      "headerSubLink": "/Sustainability/environment-and-energy",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Corporate Social Responsibility",
+                      "headerSubLink": "/Sustainability/Corporate-social-responsibility",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Environment Data",
+                      "headerSubLink": "/Sustainability/environment-data",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Health and Safety",
+                      "headerSubLink": "/Sustainability/health-and-safety",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Stakeholder Engagement",
+                      "headerSubLink": "/Sustainability/Stakeholder-engagement",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Sustainability Reports",
+                      "headerSubLink": "/Sustainability/sustainability-reports",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Sustainable Development Ambition 2030",
+                      "headerSubLink": "/Sustainability/Sustainable-Development-Ambition-2030",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Waste Management",
+                      "headerSubLink": "/Sustainability/waste-management",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Water Stewardship",
+                      "headerSubLink": "/Sustainability/water-stewardship",
+                      "target": ""
+                    }
+                  ]
+                },
+                {
+                  "headerLinkText": "Investors",
+                  "headerLink": "/investors",
+                  "target": "",
+                  "headerSubLinks": [
+                    {
+                      "headerSubLinkText": "BRSR (General & Digital)",
+                      "headerSubLink": "/investors/BRSR-(general-&-digital)",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Corporate Governance",
+                      "headerSubLink": "/investors/corporate-governance",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Disclosure Under Regn 30 A",
+                      "headerSubLink": "/Investors/disclosure-under-regn-30-a",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Dispute Resolution Mechanism",
+                      "headerSubLink": "/Investors/dispute-resolution-mechanism",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Key Management Personnel",
+                      "headerSubLink": "/Investors/key-management-personnel",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Schemes of Arrangements",
+                      "headerSubLink": "/investors/schemes-of-arrangements",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Shareholders Information",
+                      "headerSubLink": "/Investors/shareholders-information",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Disclosure 46 of SEBI (LODR) Regulations",
+                      "headerSubLink": "/investors/disclosure-46-of-SEBI-LODR-regulations",
+                      "target": ""
+                    }
+                  ]
+                },
+                {
+                  "headerLinkText": "Newsroom",
+                  "headerLink": "/newsroom",
+                  "target": "",
+                  "headerSubLinks": [
+                    {
+                      "headerSubLinkText": "Media Releases",
+                      "headerSubLink": "/newsroom/media-releases",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Media Contact",
+                      "headerSubLink": "/newsroom/media-contact",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Media Kit",
+                      "headerSubLink": "/newsroom/media-kit",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Archives",
+                      "headerSubLink": "/newsroom/archives",
+                      "target": ""
+                    },
+                    {
+                      "headerSubLinkText": "Advertisements",
+                      "headerSubLink": "/newsroom/advertisements",
+                      "target": ""
+                    }
+                  ]
+                }
+              ],
+              "imageTitle": null,
+              "imageSource": null,
+              "imageSourceMobile": null,
+              "imageSourceTablet": null,
+              "imageAlt": null
+            }
+          }
+        ],
+        "footer": [
+          {
+            "uid": "7d8a5c4d-67d9-49d8-8371-584bf749cdf4",
+            "componentName": "Footer",
+            "dataSource": "{F6F3F1C5-2AAE-47E9-BFC9-B0AB8FB227DD}",
+            "params": {},
+            "fields": {
+              "footerData": {
+                "background": {
+                  "imageSource": "/-/media/project/ambujalimited/common/footer/group-449.png",
+                  "imageSourceMobile": "/-/media/project/ambujalimited/common/footer/group-454.png",
+                  "imageSourceTablet": "",
+                  "imageAlt": "Footer Background Image"
+                },
+                "footerMainNavigations": [
+                  {
+                    "heading": "Company",
+                    "link": "",
+                    "gtmData": {
+                      "event": "",
+                      "category": "",
+                      "title": "",
+                      "label": "",
+                      "page_type": "Home",
+                      "sub_category": ""
+                    },
+                    "footerLinks": [
+                      {
+                        "link": "/about-ambuja",
+                        "linkText": "About Us",
+                        "target": "_blank",
+                        "gtmData": {
+                          "event": "Event",
+                          "category": "Category",
+                          "title": "Title",
+                          "label": "Label",
+                          "page_type": "Home",
+                          "sub_category": "Sub_Category"
+                        }
+                      },
+                      {
+                        "link": "https://careers.adani.com/",
+                        "linkText": "Careers",
+                        "target": "_blank",
+                        "gtmData": {
+                          "event": "",
+                          "category": "",
+                          "title": "",
+                          "label": "",
+                          "page_type": "Home",
+                          "sub_category": ""
+                        }
+                      },
+                      {
+                        "link": "/contact-us",
+                        "linkText": "Contact Us",
+                        "target": "_blank",
+                        "gtmData": {
+                          "event": "",
+                          "category": "",
+                          "title": "",
+                          "label": "",
+                          "page_type": "Home",
+                          "sub_category": ""
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "heading": "Investors",
+                    "link": "/investors",
+                    "gtmData": {
+                      "event": "",
+                      "category": "",
+                      "title": "",
+                      "label": "",
+                      "page_type": "Home",
+                      "sub_category": ""
+                    },
+                    "footerLinks": []
+                  },
+                  {
+                    "heading": "Newsroom",
+                    "link": "/newsroom",
+                    "gtmData": {
+                      "event": "",
+                      "category": "",
+                      "title": "",
+                      "label": "",
+                      "page_type": "Home",
+                      "sub_category": ""
+                    },
+                    "footerLinks": []
+                  },
+                  {
+                    "heading": "Product & Services",
+                    "link": "https://www.ambujahelp.in/",
+                    "gtmData": {
+                      "event": "",
+                      "category": "",
+                      "title": "",
+                      "label": "",
+                      "page_type": "Home",
+                      "sub_category": ""
+                    },
+                    "footerLinks": []
+                  },
+                  {
+                    "heading": "Sustainability",
+                    "link": "/Sustainability",
+                    "gtmData": {
+                      "event": "",
+                      "category": "",
+                      "title": "",
+                      "label": "",
+                      "page_type": "Home",
+                      "sub_category": ""
+                    },
+                    "footerLinks": []
+                  },
+                  {
+                    "heading": "Our Websites",
+                    "link": "",
+                    "gtmData": {
+                      "event": "",
+                      "category": "",
+                      "title": "",
+                      "label": "",
+                      "page_type": "Home",
+                      "sub_category": ""
+                    },
+                    "footerLinks": [
+                      {
+                        "link": "https://www.adani.com/",
+                        "linkText": "Adani Group",
+                        "target": "_blank",
+                        "gtmData": {
+                          "event": "",
+                          "category": "",
+                          "title": "",
+                          "label": "",
+                          "page_type": "Home",
+                          "sub_category": ""
+                        }
+                      },
+                      {
+                        "link": "https://www.acclimited.com/",
+                        "linkText": "ACC Limited",
+                        "target": "_blank",
+                        "gtmData": {
+                          "event": "",
+                          "category": "",
+                          "title": "",
+                          "label": "",
+                          "page_type": "Home",
+                          "sub_category": ""
+                        }
+                      },
+                      {
+                        "link": "https://www.sanghicement.com/",
+                        "linkText": "Sanghi Industries Limited",
+                        "target": "_blank",
+                        "gtmData": {
+                          "event": "",
+                          "category": "",
+                          "title": "",
+                          "label": "",
+                          "page_type": "Home",
+                          "sub_category": ""
+                        }
+                      },
+                      {
+                        "link": "https://www.alccofine.com/",
+                        "linkText": "Alccofine",
+                        "target": "_blank",
+                        "gtmData": {
+                          "event": "",
+                          "category": "",
+                          "title": "",
+                          "label": "",
+                          "page_type": "Home",
+                          "sub_category": ""
+                        }
+                      },
+                      {
+                        "link": "https://www.ambujacementfoundation.org/",
+                        "linkText": "Ambuja Foundation",
+                        "target": "_blank",
+                        "gtmData": {
+                          "event": "",
+                          "category": "",
+                          "title": "",
+                          "label": "",
+                          "page_type": "Home",
+                          "sub_category": ""
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "socialLinks": [
+                  {
+                    "heading": "Footer Social Link",
+                    "link": null,
+                    "socialLinksLogos": [
+                      {
+                        "iconImg": "/-/media/project/ambujalimited/common/footer/twitter.svg",
+                        "iconClass": "",
+                        "gtmData": {
+                          "event": "",
+                          "category": "",
+                          "title": "",
+                          "label": "",
+                          "page_type": "Home",
+                          "sub_category": ""
+                        },
+                        "link": "https://twitter.com/AmbujaCementACL/media",
+                        "linkText": "Twitter",
+                        "target": ""
+                      },
+                      {
+                        "iconImg": "/-/media/project/ambujalimited/common/footer/linkedin.svg",
+                        "iconClass": "",
+                        "gtmData": {
+                          "event": "",
+                          "category": "",
+                          "title": "",
+                          "label": "",
+                          "page_type": "Home",
+                          "sub_category": ""
+                        },
+                        "link": "https://www.linkedin.com/company/269587?trk=vsrp_companies_res_name&trkInfo=VSRPsearchId%3A1796035151476256171796%2CVSRPtargetId%3A269587%2CVSRPcmpt%3Aprimary",
+                        "linkText": "LinkedIn",
+                        "target": ""
+                      },
+                      {
+                        "iconImg": "/-/media/project/ambujalimited/common/footer/facebook.svg",
+                        "iconClass": "",
+                        "gtmData": {
+                          "event": "",
+                          "category": "",
+                          "title": "",
+                          "label": "",
+                          "page_type": "Home",
+                          "sub_category": ""
+                        },
+                        "link": "https://www.facebook.com/AmbujaCementsLimited.Official",
+                        "linkText": "Facebook",
+                        "target": ""
+                      },
+                      {
+                        "iconImg": "/-/media/project/ambujalimited/common/footer/youtube.svg",
+                        "iconClass": "",
+                        "gtmData": {
+                          "event": "",
+                          "category": "",
+                          "title": "",
+                          "label": "",
+                          "page_type": "Home",
+                          "sub_category": ""
+                        },
+                        "link": "https://www.youtube.com/user/AmbujaCementsltd",
+                        "linkText": "Youtube",
+                        "target": ""
+                      },
+                      {
+                        "iconImg": "/-/media/project/ambujalimited/common/footer/instagram.svg",
+                        "iconClass": "",
+                        "gtmData": {
+                          "event": "",
+                          "category": "",
+                          "title": "",
+                          "label": "",
+                          "page_type": "Home",
+                          "sub_category": ""
+                        },
+                        "link": "https://www.instagram.com/ambuja_cement_official/?hl=en",
+                        "linkText": "Instagram",
+                        "target": ""
+                      }
+                    ]
+                  }
+                ],
+                "logo": {
+                  "imageTitle": "Footer Logo",
+                  "imageSource": "/-/media/project/ambujalimited/new-updated-images/ambujacemns-bc1a2948.png",
+                  "imageSourceMobile": "/-/media/project/ambujalimited/new-updated-images/ambujacemns-bc1a2948.png",
+                  "imageSourceTablet": "/-/media/project/ambujalimited/new-updated-images/ambujacemns-bc1a2948.png",
+                  "imageAlt": ""
+                },
+                "buCopyright": {
+                  "heading": "Footer Copyright",
+                  "subHeading": "© Copyright 2024 Adani Group",
+                  "linkModels": [
+                    {
+                      "link": "/",
+                      "linkText": "Sitemap",
+                      "target": "",
+                      "gtmData": {
+                        "event": "",
+                        "category": "",
+                        "title": "",
+                        "label": "",
+                        "page_type": "Home",
+                        "sub_category": ""
+                      }
+                    },
+                    {
+                      "link": "/",
+                      "linkText": "Privacy Policy",
+                      "target": "",
+                      "gtmData": {
+                        "event": "",
+                        "category": "",
+                        "title": "",
+                        "label": "",
+                        "page_type": "Home",
+                        "sub_category": ""
+                      }
+                    },
+                    {
+                      "link": "",
+                      "linkText": "Legal Disclaimer",
+                      "target": "",
+                      "gtmData": {
+                        "event": "",
+                        "category": "",
+                        "title": "",
+                        "label": "",
+                        "page_type": "Home",
+                        "sub_category": ""
+                      }
+                    },
+                    {
+                      "link": "",
+                      "linkText": "Terms and Conditions",
+                      "target": "",
+                      "gtmData": {
+                        "event": "",
+                        "category": "",
+                        "title": "",
+                        "label": "",
+                        "page_type": "Home",
+                        "sub_category": ""
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@use "@styles/partials/variable.scss" as *;
+@use "@styles/partials/_fonts.scss" as *;
+@use "@styles/partials/_mixins.scss" as *;
+
+  
+  .rteContainer{
+    text-align: left;
+    img{
+      max-width: 100%;
+    }
+  }
+  

@@ -1,0 +1,185 @@
+@use '@styles/partials/variable.scss' as *;
+@use '@styles/partials/_fonts.scss' as *;
+@use '@styles/partials/_mixins.scss' as *;
+
+.RowSection {
+  padding-block: 0rem;
+  .noData {
+    color: #666;
+    font-weight: bold;
+    text-align: left;
+  }
+  .dateDiv{
+    text-align: left;
+  }
+  
+  
+  // If you want to make the dropdown even narrower
+  .selectBox {
+    width: 100%;
+    
+    // Aligns the contained select to the right
+    &.d-flex.justify-content-end {
+      justify-content: flex-end;
+    }
+  }
+  
+  .yearSelect {
+    max-width: 200px; // Force 50% width
+    text-align: left; // Right-align text
+    padding-right: 1rem; // Add some padding for better appearance
+    
+    // Optional: Custom arrow styling
+    background-position: right 0.75rem center;
+  }
+  
+  // If you need to override Bootstrap styles
+  .form-select {
+    &.text-end {
+      text-align: right;
+    }
+  }
+  &.bg {
+    padding-block: 3rem;
+    background-color: #f2f9fa;
+  }
+
+  @media (max-width: $sm) {
+    padding-bottom: 2rem;
+  }
+  .cardHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    @media (min-width: $md) {
+      min-height: 3rem;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0;
+      text-align: left;
+    }
+    .viewMore {
+      text-decoration: underline;
+      margin-left: 1rem;
+      white-space: nowrap;
+      font-size: 1rem;
+      color: #1a779a;
+    }
+  }
+
+
+
+  .annualSection {
+    padding: 1.2rem;
+    box-shadow: 0px 3px 6px #00000029;
+    height: 100%;
+    background-color: #fff;
+    
+    .cardBody {
+      h5 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        text-align: left;
+        margin-bottom: 1.5rem;
+      }
+      ul {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 0;
+        li {
+          margin-bottom: 1rem;
+          a {
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            text-align: left;
+            align-items: start;
+
+            cursor: pointer;
+            .icon {
+              display: inline-block;
+              width: 1rem;
+              height: auto;
+              margin-right: 1rem;
+              margin-top: 0.3rem;
+            }
+            .title {
+              font-size: 1.1rem;
+              font-weight: 600;
+              color: #000;
+            }
+            .subTitle {
+              font-size: 1rem;
+              color: #a7a7a7;
+            }
+          }
+          
+        }
+      }
+    }
+  }
+  
+  .cols{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .financialSection {
+    padding: 1.2rem;
+    box-shadow: 0px 3px 6px #00000029;
+    height: 100%;
+    background-color: #fff;
+    .cardBody {
+      h5 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        text-align: left;
+        margin-bottom: 1.5rem;
+      }
+      ul {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 0;
+        li {
+          margin-bottom: 1.5rem;
+          a {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            text-align: left;
+            cursor: pointer;
+            text-decoration: none;
+            align-items: start;
+
+            .icon {
+              display: inline-block;
+              width: 1.3rem;
+              height: auto;
+              margin-right: 1rem;
+              margin-top: 0.4rem;
+            }
+            .title {
+              font-size: 1.1rem;
+              font-weight: 600;
+              color: #000;
+            }
+            .subTitle {
+              font-size: 1rem;
+              color: #a7a7a7;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.DateforCards{
+  color:#c0c0c0;
+  text-align: left;
+  padding-left: 2rem;
+}

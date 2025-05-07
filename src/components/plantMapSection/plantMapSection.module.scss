@@ -1,0 +1,500 @@
+@use '@styles/partials/variable.scss' as *;
+@use '@styles/partials/_fonts.scss' as *;
+@use '@styles/partials/_mixins.scss' as *;
+
+.plantAreaSection {
+  margin-top: 4rem;
+  background-color: #f5f9ff;
+
+  .carouselSubtitle {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+
+  .swiperSlide {
+    height: auto;
+    min-height: 122px;
+    @media (max-width: $sm) {
+      min-height: 146px;
+    }
+
+    .OurPlantRight {
+      padding: 1rem;
+      height: 100%;
+
+      &:hover {
+        background: #316eb3;
+        background: -moz-linear-gradient(45deg, #316eb3 0, #1aa393 100%);
+
+        background: -webkit-gradient(
+          left bottom,
+          right top,
+          color-stop(0, #316eb3),
+          color-stop(100%, #1aa393)
+        );
+        background: -webkit-linear-gradient(45deg, #316eb3 0, #1aa393 100%);
+        background: -o-linear-gradient(45deg, #316eb3 0, #1aa393 100%);
+        background: -ms-linear-gradient(45deg, #316eb3 0, #1aa393 100%);
+        background: linear-gradient(45deg, #316eb3 0, #1aa393 100%);
+
+        cursor: pointer;
+        .plantCard {
+          margin-bottom: 0;
+          .plantTitle {
+            color: #fff;
+            transform: translateY(5px) scale(1.1);
+          }
+          .plantDescription {
+            color: #fff;
+            transform: translateY(0) scale(1.1);
+            padding-inline: 1rem;
+            margin-top: 1rem;
+          }
+        }
+      }
+
+      .plantCard {
+        text-align: left;
+        transition: all ease-in-out 0.6s;
+
+        .plantTitle {
+          color: #1669b3;
+          margin: 0;
+          font-family: 'Adani-Semibold';
+          font-weight: bolder;
+          font-size: 1.4rem;
+          text-align: center;
+          margin-bottom: 0.5rem;
+          transition: all ease-in-out 0.3s;
+        }
+        .plantDescription {
+          color: #000000;
+          margin: 0;
+          font-family: 'Adani-Regular';
+          font-weight: 600;
+          text-align: center;
+          transition: all ease-in-out 0.3s;
+          margin-bottom: 0;
+
+          @media (min-width: $sm) {
+            padding-inline: 1.5rem;
+          }
+          @media (max-width: $sm) {
+            padding-inline: 2rem;
+          }
+        }
+      }
+    }
+
+    &:global(.swiper-slide-active) {
+      // .OurPlantRight {
+      //   padding: 1rem;
+      //   height: 100%;
+
+      //   background: #316eb3;
+      //   background: -moz-linear-gradient(45deg, #316eb3 0, #1aa393 100%);
+
+      //   background: -webkit-gradient(
+      //     left bottom,
+      //     right top,
+      //     color-stop(0, #316eb3),
+      //     color-stop(100%, #1aa393)
+      //   );
+      //   background: -webkit-linear-gradient(45deg, #316eb3 0, #1aa393 100%);
+      //   background: -o-linear-gradient(45deg, #316eb3 0, #1aa393 100%);
+      //   background: -ms-linear-gradient(45deg, #316eb3 0, #1aa393 100%);
+      //   background: linear-gradient(45deg, #316eb3 0, #1aa393 100%);
+
+      //   .plantCard {
+      //     margin-bottom: 0;
+      //     .plantTitle {
+      //       color: #fff !important;
+      //       transform: translateY(5px) scale(1.1) !important;
+      //     }
+      //     .plantDescription {
+      //       color: #fff !important;
+      //       transform: translateY(0) scale(1.1) !important;
+      //       padding-inline: 1rem;
+      //       margin-top: 1rem;
+      //     }
+      //   }
+
+      //   .plantCard {
+      //     text-align: left;
+      //     transition: all ease-in-out 0.6s;
+
+      //     .plantTitle {
+      //       color: #1669b3;
+      //       margin: 0;
+      //       font-family: 'Adani-Semibold';
+      //       font-weight: bolder;
+      //       font-size: 1.4rem;
+      //       text-align: center;
+      //       margin-bottom: 0.5rem;
+      //       transition: all ease-in-out 0.3s;
+      //     }
+      //     .plantDescription {
+      //       color: #000000;
+      //       margin: 0;
+      //       font-family: 'Adani-Regular';
+      //       font-weight: 600;
+      //       text-align: center;
+      //       transition: all ease-in-out 0.3s;
+      //       margin-bottom: 0;
+      //     }
+      //   }
+      // }
+    }
+  }
+  :global(.swiper-wrapper) {
+    padding-bottom: 35px;
+    @media (max-width: $sm) {
+      padding-bottom: 40px;
+    }
+  }
+
+  :global(.swiper-pagination-bullet) {
+    height: 10px;
+    width: 10px;
+    margin-inline: 8px !important;
+  }
+  :global(.swiper-pagination-bullet-active) {
+    background-color: #949494;
+  }
+}
+
+.plantHomeSection {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 3rem;
+
+  .overlayImage {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    object-fit: cover;
+    max-width: 1095px;
+    object-position: center;
+  }
+
+  .customTooltip {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    top: 50%;
+    left: 50%;
+
+    .tooltipText {
+      color: #333;
+      font-size: 0.8;
+      font-weight: bold;
+    }
+
+    .blueLabel {
+      color: #1564ac; // or any blue color you prefer
+      font-size: 0.8;
+      margin-top: 4px;
+      font-weight: bold;
+    }
+  }
+
+  .pointerShape {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+    .shape {
+      opacity: 0.9;
+      transition:
+        transform 0.3s,
+        opacity 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 1;
+        transform: scale(1.2);
+      }
+    }
+
+    .Square {
+      width: 10px;
+      height: 10px;
+    }
+
+    .Circle {
+      width: 10px;
+      height: 10px;
+
+      border-radius: 50%;
+    }
+
+    .Triangle {
+      width: 12px;
+      aspect-ratio: 1 / cos(30deg);
+      clip-path: polygon(50% 0, 100% 100%, 0 100%);
+      background-color: unset;
+    }
+
+    .Diamond {
+      height: 14px;
+      aspect-ratio: 1;
+      clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    }
+
+    .ACC {
+      border-color: #962d9b;
+      background-color: #962d9b;
+    }
+    .Ambuja {
+      border-color: #1564ac;
+      background-color: #1564ac;
+    }
+    .Sanghi {
+      border-color: #00b050;
+      background-color: #00b050;
+    }
+    .Dahej {
+      border-color: #ff0000;
+      background-color: #ff0000;
+    }
+    .Penna {
+      border-color: #ec7016;
+      background-color: #ec7016;
+    }
+  }
+
+  .contentRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    position: relative;
+    min-height: 620px;
+
+    @include media($sm, max) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .textContent {
+    flex: 1;
+    padding-top: 3rem;
+
+    @include media($sm, max) {
+      padding-right: 0;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .title {
+    font-size: 2rem;
+    color: #023399;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    font-family: 'Adani-SemiBold';
+
+    @include media($sm, max) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 2rem;
+    border-left: 3px solid #2caa61;
+    padding-left: 0.625rem;
+    width: 30%;
+    text-align: left;
+  }
+
+  .selectboxwithButton {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 3rem;
+
+    a {
+      color: #023399;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .selectList {
+      border-radius: 30px;
+      color: #333;
+      font-size: 1rem;
+      border: 1px solid #d0d7de;
+      width: fit-content;
+
+      &:focus {
+        outline: none;
+        border-color: none !important;
+        box-shadow: none !important;
+      }
+    }
+  }
+
+  .listContainer {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0px;
+    left: 19%;
+    transform: translateX(19%);
+    width: 40%;
+    justify-content: space-between;
+
+    @include media($xl, max) {
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      transform: translateX(0);
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    @include media($sm, max) {
+      flex-direction: column;
+    }
+  }
+
+  .listColumn {
+    margin: 0 10px;
+    text-align: left;
+
+    .plantList {
+      list-style-type: none;
+      padding-left: 0;
+
+      li {
+        position: relative;
+        padding-left: 1.5rem;
+
+        &:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 7px;
+          height: 7px;
+          border-radius: 50%;
+        }
+
+        &:nth-child(1):before {
+          background-color: #1564ac;
+        }
+
+        &:nth-child(2):before {
+          background-color: #962d9b;
+        }
+
+        &:nth-child(3):before {
+          background-color: #00b050;
+        }
+
+        &:nth-child(4):before {
+          background-color: #ff0000;
+        }
+
+        &:nth-child(5):before {
+          background-color: #ec7016;
+        }
+      }
+    }
+  }
+
+  .columnContent {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    opacity: 0.9;
+  }
+
+  .divider {
+    border: none;
+    border-top: 2px solid #939393;
+    margin: 1rem 0;
+  }
+}
+
+.plantList1 {
+  list-style-type: none;
+  padding-left: 0;
+
+  li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 9px;
+      height: 9px;
+      background-color: black;
+    }
+
+    &:nth-child(1):before {
+      border-radius: 0;
+    }
+
+    &:nth-child(2):before {
+      border-radius: 50%;
+    }
+
+    &:nth-child(3):before {
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+
+    &:nth-child(4):before {
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    }
+  }
+}
+
+@include media($sm, max) {
+  .plantHomeSection {
+    display: none;
+  }
+}
+
+@include media-min-max($sm, $md) {
+  .description {
+    width: 100% !important;
+  }
+}
+
+// @include media-min-max($sm, $md) {
+//   .listContainer {
+//     left: 0% !important;
+//     transform: translateX(-3%) !important;
+//     width: 50% !important;
+//     justify-content: space-between !important;
+//   }
+// }

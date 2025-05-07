@@ -1,0 +1,339 @@
+@use '@styles/partials/variable.scss' as *;
+@use '@styles/partials/_fonts.scss' as *;
+@use '@styles/partials/_mixins.scss' as *;
+
+.aboutUs {
+  padding-top: 5rem;
+
+  .content {
+    flex: 0 0 48.7%;
+    min-width: 48.7%;
+    text-align: left;
+  }
+
+  .aboutUsCard {
+    padding: 1.25rem;
+    border: none;
+  }
+
+  .title {
+    font-size: 2rem;
+    color: #023399;
+    margin-bottom: 1.5rem;
+    font-family: 'Adani-SemiBold';
+  }
+
+  .description {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    // overflow-y: scroll;
+    // height: 8.125rem;
+    direction: rtl;
+    :first-child {
+      border-left: 3px solid #2caa61;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .description::-webkit-scrollbar {
+    width: 0.188rem;
+    height: 0.188rem; /* For horizontal scrollbars if needed */
+  }
+
+  .description::-webkit-scrollbar-thumb {
+    background-color: #2caa61;
+    border-radius: 4px;
+  }
+
+  /* Make sure the text inside the description is still aligned left */
+  .description p {
+    direction: ltr;
+    padding-left: 0.938rem;
+  }
+
+  .mediaSection {
+    position: relative;
+    height: 100%;
+    .swiper {
+      width: 100%;
+
+      @media (max-width: $sm) {
+        margin-top: 1rem;
+      }
+      .swiperSlide {
+        height: auto;
+
+        img {
+          object-fit: cover;
+          height: 100%;
+        }
+
+        @media (max-width: $sm) {
+          aspect-ratio: 4 / 3;
+        }
+      }
+
+      .carouselImage {
+        width: 100%;
+      }
+      .gradient {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(360deg, black 0%, transparent 70%);
+      }
+
+      .carouselCaption {
+        position: absolute;
+        z-index: 5;
+        left: 35px;
+        width: 40%;
+        text-align: left;
+        bottom: 80px;
+        transform: translate(0%, 50%);
+        height: fit-content;
+      }
+
+      .carouselCaption .BannerTitle {
+        color: #fff;
+        font-size: 2.2rem;
+        font-weight: bolder;
+        font-family: 'Adani-Regular';
+      }
+
+      .carouselCaption p {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #fff;
+      }
+
+      @include media($sm, max) {
+        .carouselCaption {
+          padding: 0.5rem 1rem;
+          bottom: 0.8rem;
+          left: 0rem;
+          width: 100%;
+          text-align: left;
+          transform: translate(0%, 3%);
+          height: fit-content;
+        }
+      }
+
+      @include media-min-max($sm, $md) {
+        .carouselCaption {
+          width: 60%;
+        }
+      }
+    }
+
+    /* Fixed global styles section */
+    :global(.swiper) {
+      height: 100%;
+      .swiper-pagination-bullet {
+        background-color: #fff !important;
+        opacity: 1;
+      }
+
+      .swiper-wrapper {
+        width: 100%;
+      }
+    }
+
+    @include media($sm, max) {
+      :global(.swiper) {
+        .swiper-pagination {
+          display: none;
+        }
+      }
+    }
+
+    :global(.swiper .swiper-pagination-bullet-active) {
+      background-color: #fff !important;
+      width: 60px;
+      border-radius: 20px !important;
+    }
+
+    :global(.swiper .swiper-pagination-bullet) {
+      background-color: #fff !important;
+      opacity: 1;
+    }
+
+    :global(.swiper .swiper-pagination) {
+      bottom: 35px !important;
+      left: 35px !important;
+      text-align: left;
+    }
+
+    :global(.swiper.middle .swiper-pagination) {
+      bottom: 35px !important;
+      left: 0 !important;
+      text-align: center;
+    }
+
+    :global(.NewsMediaSection .swiper-pagination-bullet) {
+      background-color: grey !important;
+      opacity: 1;
+    }
+
+    :global(.NewsMediaSection .swiper-pagination-bullet-active) {
+      background-color: #313278 !important;
+      width: 60px;
+      border-radius: 20px !important;
+    }
+
+    :global(.swiper .swiper-initialized) {
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2%;
+        background: linear-gradient(
+          to right,
+          #087daa,
+          #1960af,
+          #554ea1,
+          #821787,
+          #a8266a,
+          #bd274f
+        );
+        z-index: 10;
+      }
+    }
+  }
+
+  .imageWrapper {
+    // position: relative;
+    overflow: hidden;
+    // border-radius: 8px;
+    // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 0;
+    padding-bottom: 55.25%; /* 16:9 aspect ratio */
+    // background-color: #000;
+
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+
+    .videoOverlay {
+      position: absolute;
+      bottom: 4.125rem;
+      left: -12rem;
+      display: flex;
+      align-items: center;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      @media (max-width: 1399px) {
+        left: 50%;
+        top: 50%; // Vertically center the element
+        transform: translate(-50%, -50%);
+      }
+
+      span {
+        margin-right: 0.625rem;
+        color: #023399;
+        @media (max-width: 1399px) {
+          display: none;
+        }
+      }
+    }
+
+    .playButton {
+      width: 4.313rem;
+      height: 4.313rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s ease;
+      border: none;
+      background-color: #023399;
+
+      // &:hover {
+      //   background-color: white;
+      // }
+
+      i {
+        font-size: 1.8rem;
+        color: white !important;
+      }
+    }
+  }
+}
+
+@include media($sm, max) {
+  .aboutUs {
+    padding-top: 2rem;
+
+    .aboutUsCard {
+      border: none;
+      padding: 0rem;
+      box-shadow: none;
+    }
+    .mediaSection {
+      min-width: 100%;
+      margin-left: 0%;
+      margin-top: 0rem;
+    }
+
+    .playButton {
+      width: 4rem !important;
+      height: 4rem !important;
+    }
+
+    .videoOverlay {
+      left: 50%;
+      top: 50%; // Vertically center the element
+      transform: translate(-50%, -50%);
+      span {
+        display: none;
+      }
+    }
+    .mobileTitleVideo {
+      span {
+        color: #023399;
+        padding: 0.4rem;
+      }
+    }
+  }
+}
+
+@include media-min-max($sm, $md) {
+  .aboutUs {
+    .mobileTitleVideo {
+      span {
+        color: #023399;
+        font-weight: bold;
+      }
+    }
+    .videoOverlay {
+      left: 50%;
+      top: 50%; // Vertically center the element
+      transform: translate(-50%, -50%);
+      span {
+        display: none;
+      }
+    }
+
+    .mediaSection {
+      margin-left: 0rem;
+      margin-top: 0rem;
+      video {
+        top: 1rem;
+      }
+    }
+  }
+}

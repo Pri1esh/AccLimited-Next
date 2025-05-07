@@ -1,0 +1,93 @@
+.boardSection {
+  .sectionTitle {
+    color: #0047cc;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  .directorCardBox {
+    text-decoration: none;
+    height: 100%;
+    .directorCard {
+      position: relative;
+      padding-top: 65px;
+      transition: all 0.3s ease;
+      height: 100%;
+
+      &:hover {
+        .cardContent {
+          border-color: #8d377a;
+          background-color: #f4f4f4;
+          &:hover {
+            .directorName {
+              color: #8d377a;
+            }
+          }
+        }
+      }
+
+      .cardContent {
+        border: 2px solid #f4f4f4;
+        padding: 1rem;
+        background: white;
+        text-align: center;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        transition: border-color 0.3s ease;
+        height: 100%;
+      }
+
+      .profileImage {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 1px solid #f5941f;
+        overflow: hidden;
+        background: #f5f5f5;
+        transition: border 0.3s ease;
+        margin-top: -80px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .directorName {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #000;
+        margin-bottom: 0.5rem;
+        margin-top: 1rem;
+      }
+
+      .directorTitle {
+        font-size: 0.9rem;
+        color: #666;
+        line-height: 1.4;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .boardSection {
+    .sectionTitle {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .directorCard {
+      .profileImage {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  }
+}

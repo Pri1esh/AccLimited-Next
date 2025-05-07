@@ -1,0 +1,103 @@
+@use "@styles/partials/variable.scss" as *;
+@use "@styles/partials/_fonts.scss" as *;
+@use "@styles/partials/_mixins.scss" as *;
+
+.ResearchCoverageSection {
+  background-color: #F2F9FA;
+  padding-block: 2rem;
+
+  .committeeContainer {
+    .title {
+      font-size: 1.5rem; // Slightly larger for section emphasis
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      text-align: center; // Center the title for a section-like design
+      text-align: left;
+    }
+
+    .tableWrapper {
+      background-color: white;
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      margin-top: 1.5rem;
+    }
+
+    .table {
+      margin-bottom: 0;
+      --bs-table-striped-bg: --bs-body-bg;
+      thead {
+        tr {
+          th {
+            background-color: #8E3778;
+            color: white;
+            font-weight: 500;
+            padding: 1rem;
+            border: none;
+            text-align: left;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          &:nth-child(odd) {
+            
+            border-left: 1px solid #707070;
+            border-right: 1px solid #707070;
+          }
+
+          td {
+            padding: 1rem;
+            border-top: 1px solid #dee2e6;
+            vertical-align: middle;
+            text-align: left;
+            border: none;
+            
+          }
+        }
+      }
+    }
+
+    .buttonWrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .loadButton {
+      background: linear-gradient(to right, #1C9C96, #316EB2);
+      border: none;
+      padding: 0.75rem 2.5rem;
+      border-radius: 2rem;
+      font-weight: 500;
+      font-size: 1rem; // Slightly larger for better visibility
+      color: white;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+
+      &:hover {
+        opacity: 0.9;
+        transform: scale(1.05); // Add hover animation for better interactivity
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+
+  .buttonContainer{
+    padding-top: 2rem;
+  }
+
+  :global(.table-striped>tbody>tr:nth-of-type(odd)>*) {
+    border-left:1px solid #707070;
+    border-right:1px solid #707070;
+   }
+   :global(.table-striped>tbody>tr:nth-of-type(even)>*) {
+     background-color:#F5F5F5;
+   }
+   
+}
+
+

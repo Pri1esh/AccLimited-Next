@@ -1,0 +1,88 @@
+.investorServicesSection {
+    background-color: #F5F9FF;
+    padding: 3rem 1rem;
+  
+    .cardWrapper {
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: center;
+      gap: 1.5rem;
+    }
+  
+    .card {
+      flex: 1 1 calc(25% - 1.5rem);
+      max-width: calc(25% - 1.5rem);
+      background-color: #fff;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+        //   &:hover {
+        //     transform: translateY(-5px); 
+        //     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+        //   }
+  
+      .imageWrapper {
+        position: relative;
+        padding-top: 60%; /* Maintain aspect ratio (16:9) */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.7s ease;
+        
+  
+        &:hover {
+            .cardTitle{
+                bottom: 15%;
+                font-size: 1.2rem;
+            }
+          
+        //   filter: brightness(0.9); /* Slight dimming effect on hover */
+        }
+  
+        .cardTitle {
+          position: absolute;
+          bottom: 0;
+          color: #fff;
+          font-size: 1rem;
+          font-weight: 600;
+          text-align: center;
+          text-wrap: auto;
+          padding: 0.5rem 1rem;
+          border-radius: 4px;
+          transition: all 0.7s ease; 
+          &:hover {
+            bottom: 15%;
+            font-size: 1.2rem;
+          }
+         
+        }
+      }
+    }
+  
+    /* Media Queries for Responsiveness */
+    @media (max-width: 1024px) {
+      .card {
+        flex: 1 1 calc(25% - 1.5rem); /* Still 4 cards per row for large screens */
+        max-width: calc(25% - 1.5rem);
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .card {
+        flex: 1 1 calc(50% - 1.5rem); /* 2 cards per row */
+        max-width: calc(50% - 1.5rem);
+      }
+    }
+  
+    @media (max-width: 576px) {
+      .card {
+        flex: 1 1 100%; /* 1 card per row */
+        max-width: 100%;
+      }
+    }
+  }
+  

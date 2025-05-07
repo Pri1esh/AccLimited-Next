@@ -1,0 +1,116 @@
+@use "@styles/partials/variable.scss" as *;
+@use "@styles/partials/_fonts.scss" as *;
+@use "@styles/partials/_mixins.scss"as *;
+
+
+.BannerCarouselSection {
+  
+  :global(.swiper-pagination-bullet) {
+    background-color: #fff !important;
+    opacity: 1;
+  }
+
+  :global(.swiper-wrapper) {
+    width: 100%;
+    padding-bottom: 40px ;
+  }
+
+  :global(.swiper-pagination-bullet-active) {
+    background-color: #fff !important;
+    width: 60px;
+    border-radius: 20px !important;
+  }
+  
+  :global(.swiper-pagination) {
+    bottom: 0px !important;
+    text-align: center;
+  }
+  
+  :global(.swiper-pagination-bullet) {
+    background-color: grey !important;
+    opacity: 1;
+  }
+  
+  :global(.swiper-pagination-bullet-active) {
+    background-color: #313278 !important;
+    width: 60px;
+    border-radius: 20px !important;
+  }
+
+  @include media($md, max) {
+    margin-top: 4.8rem;
+  }
+}
+
+
+
+
+
+.BannerCarouselSection .swiperContainer {
+  width: 100%;
+  height: 25rem; // Set the height of the swiper
+  margin-top: 12.5rem;
+}
+
+.BannerCarouselSection .carouselItem {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.BannerCarouselSection .carouselImage {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  object-fit: cover; // Ensure the image covers the area
+}
+
+.BannerCarouselSection .carouselCaption {
+  position: absolute;
+  left: 6.875rem;
+  width: 40%;
+  text-align: left;
+  bottom: 50%;
+  transform: translate(0%, 50%);
+  height: fit-content;
+}
+
+.BannerCarouselSection .carouselCaption .BannerTitle {
+  color: #023399;
+  font-size: 2.2rem;
+  font-weight: bolder;
+  font-family: 'Adani-Regular';
+}
+
+.BannerCarouselSection .carouselCaption p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #292929;
+}
+
+@include media($sm, max) {
+  .BannerCarouselSection {
+    .carouselCaption {
+      padding: 0.5rem;
+      left: 0rem;
+      width: 100%;
+      text-align: center;
+      bottom: 0;
+      top: 3%;
+      transform: translate(0%, 3%);
+      height: fit-content;
+    }
+  }
+}
+
+@include media-min-max($sm, $md) {
+  .BannerCarouselSection {
+    .carouselCaption {
+      width: 60%;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@use '@styles/partials/variable.scss' as *;
+@use '@styles/partials/_fonts.scss' as *;
+@use '@styles/partials/_mixins.scss' as *;
+
+.alternateCardsSection {
+  padding-top: 2rem;
+  .tile {
+    margin-bottom: 3rem;
+
+    &.reverse {
+      @media (min-width: 768px) {
+        flex-direction: row-reverse;
+      }
+    }
+
+    
+    .tileImage{
+        .card{
+            border:none;
+        }
+    }
+    .tileContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: left;
+      .tileHead {
+        font-size: 1.6rem;
+        font-family: 'Adani-SemiBold';
+        font-weight: 700;
+        text-align: left;
+        color: #000000;
+        letter-spacing: 0;
+      }
+      .tileDesc {
+        font-size: 1.1rem;
+        text-align: left;
+        color: #000000;
+        letter-spacing: 0;
+        font-weight: 500;
+      }
+    }
+  }
+}

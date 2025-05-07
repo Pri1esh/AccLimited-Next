@@ -1,0 +1,38 @@
+@use '@styles/partials/variable.scss' as *;
+@use '@styles/partials/_fonts.scss' as *;
+@use '@styles/partials/_mixins.scss' as *;
+
+body {
+  font-family: 'Adani-Regular';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+.main {
+  text-align: center;
+}
+
+.st {
+  margin-bottom: 0 !important;
+  margin-top: 3rem;
+}
+.t-bold {
+  font-weight: 700;
+}
+
+.max2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Number of lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.richx {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Adani-Regular' !important;
+}

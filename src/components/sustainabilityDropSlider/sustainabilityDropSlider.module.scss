@@ -1,0 +1,155 @@
+.accordionWrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+
+  :global(.accordion) {
+    border-radius: 13px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  :global(.accordion-item) {
+    border: none;
+    background-color: #fff;
+    border: 1px solid #707070;
+    border-radius: 8px;
+    overflow: hidden;
+
+    &:first-of-type {
+      border-top-left-radius: 13px;
+      border-top-right-radius: 13px;
+    }
+
+    &:last-of-type {
+      border-bottom-left-radius: 13px;
+      border-bottom-right-radius: 13px;
+    }
+  }
+
+  :global(.accordion-header) {
+    margin: 0;
+
+    button {
+      padding: 1rem 1.5rem;
+      border-top-left-radius: 13px !important;
+      border-top-right-radius: 13px !important;
+      background-color: rgba(0, 0, 0, 0.03) !important;
+      border: none;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.1rem;
+      font-weight: 600;
+
+      &:focus {
+        box-shadow: none;
+      }
+
+      &:not(.collapsed) {
+        background-color: #fff;
+
+        .chevron {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+  :global(.accordion-button:not(.collapsed)) {
+    border-bottom: 1px solid #707070;
+  }
+
+  :global(.accordion-body) {
+    padding: 0;
+  }
+}
+
+.chevron {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.2s ease;
+}
+
+.reportsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.reportItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #e9ecef;
+
+  &:first-child {
+    border-top: none;
+  }
+}
+
+.reportTitle {
+  color: #212529;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.downloadLink {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+}
+
+.swiper {
+  .swiperSlide {
+    .ImgContainer {
+      position: relative;
+
+      .overlayImg {
+        width: 100%;
+      }
+
+      .overlayTxt {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: rgb(0 0 0 / 80%);
+        width: 100%;
+        color: #fff;
+        font-size: 1.2rem;
+        margin-bottom: 0;
+        padding: 20px;
+      }
+    }
+  }
+
+  :global(.swiper-wrapper) {
+    padding-bottom: 30px;
+  }
+
+  :global(.swiper-pagination) {
+    bottom: 0;
+  }
+  
+  :global(.swiper-pagination-bullet) {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #0d67ca !important;
+    background: transparent;
+    opacity: 1;
+  }
+  
+  :global(.swiper-pagination-bullet-active) {
+    background-color: #0d67ca !important;
+    width: 12px;
+    height: 12px;
+  }
+  
+}

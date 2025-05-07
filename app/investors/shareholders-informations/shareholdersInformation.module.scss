@@ -1,0 +1,21 @@
+.mainTitle {
+    color: #0047CC;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    margin-top: 2.5rem;
+    // margin-bottom: 1rem;
+    text-align: left;
+  
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+    }
+  } .description {
+    font-size: 1.2rem;
+    margin: 1rem 0 2rem;
+    padding-left: 12px;
+    border-left: 3px solid #22C55E;
+    line-height: 1.5;
+    text-align: left;
+    font-family: "Adani-Regular";
+  }

@@ -1,0 +1,163 @@
+@use '@styles/partials/variable.scss' as *;
+@use '@styles/partials/_fonts.scss' as *;
+@use '@styles/partials/_mixins.scss' as *;
+
+.navContainer {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navTabs {
+  border-bottom: none;
+  .navItem {
+    background-color: #f2f2f2;
+    border: 1px solid #dedede;
+    flex: 1;
+
+    @media (max-width: $sm) {
+      flex-basis: 50%;
+    }
+
+    a {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    :global(.active) {
+      background-color: #1a779a !important;
+      color: #fff !important;
+      border: 1px solid #1a779a;
+    }
+    .navLink {
+      color: #495057;
+      height: 100%;
+      background-color: transparent;
+      border: 1px solid transparent;
+      border-radius: 0;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        border-color: #e9ecef #e9ecef #dee2e6;
+      }
+
+      &.active {
+        background-color: #1a779a !important;
+        color: #fff !important;
+        border: 1px solid #1a779a;
+      }
+    }
+  }
+}
+
+.dropdownSection {
+  padding: 1.8rem 2rem 2rem 2rem;
+  border: 1px solid #dedede;
+  border-top: none;
+
+  @media (max-width: $sm) {
+    padding: 1.8rem 1rem 1rem 1rem;
+  }
+
+  .dropDown {
+    border-radius: 0;
+    padding: 0.6rem 1rem;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+
+    .downArr {
+      float: right;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .dropDownMenu {
+    border-radius: 0;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    max-height: 350px;
+    overflow-y: scroll;
+
+    .dripDownItem {
+      --bs-dropdown-link-active-bg: #f2f2f2 !important;
+      --bs-dropdown-link-active-color: #000;
+      white-space: pre-wrap;
+    }
+  }
+
+  :global(.dropdown) {
+    text-align: left;
+  }
+
+  :global(.dropdown-toggle) {
+    width: 100%;
+    max-width: 300px;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    color: #495057;
+
+    &:hover,
+    &:focus {
+      background-color: #f8f9fa;
+      border-color: #ced4da;
+      color: #495057;
+    }
+
+    &::after {
+      float: right;
+      margin-top: 8px;
+    }
+  }
+}
+
+.contactList {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contactCard {
+  text-align: left;
+
+  @media (max-width: $sm) {
+    max-width: 300px;
+  }
+
+  .cardHead {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    color: #212529;
+  }
+
+  .phone {
+    margin: 0;
+    color: #6c757d;
+    font-weight: 600;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+  }
+
+  .mail {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

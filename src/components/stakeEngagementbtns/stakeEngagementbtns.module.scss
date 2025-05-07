@@ -1,0 +1,24 @@
+@use "@styles/partials/variable.scss" as *;
+@use "@styles/partials/_fonts.scss" as *;
+@use "@styles/partials/_mixins.scss" as *;
+
+
+.stakeEngagementbtns {
+  .btnBox{
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    .btns button{
+      padding-block: 1rem;
+    }
+    @media(max-width:$sm){
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+      .btns button{
+        padding-block: 0.75rem;
+      }
+    }
+  }
+}
+

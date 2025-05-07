@@ -1,0 +1,107 @@
+@use "@styles/partials/variable.scss" as *;
+@use "@styles/partials/_fonts.scss" as *;
+@use "@styles/partials/_mixins.scss" as *;
+
+
+  @include media($sm, max) {
+    .subscribeButton {
+      font-size: 0.8rem;
+      padding: 0.5rem 2rem;
+      text-wrap: nowrap;
+    }
+  }
+
+.governanceSection {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  // background-color: #f5f5f5;
+
+  .sectionTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #023399;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-wrap: auto;
+    @include media($sm, max) {
+      text-align: left;
+      font-size: 1.5rem;
+    }    
+  }
+
+  .cardBox{
+    text-decoration: none;
+    .card {
+      display: flex;
+      flex-direction: column;
+      // border-radius: 8px;
+      overflow: hidden;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+      .cardArrow {
+        color: #8D377A;
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 50%;
+        padding: 0.4rem;
+        position: absolute;
+        right: 1.2rem;
+        bottom: -1rem;
+        transition: transform 0.3s ease;
+        
+        &:hover {
+          transform: translateX(5px); /* Move arrow slightly to the right */
+        }
+      }
+  
+      .cardImage {
+        flex: 0 0 80%; /* Occupies 80% of the card */
+        background-size: cover;
+        background-position: center;
+        height: 0;
+        position: relative;
+        transition: transform 0.3s ease;
+  
+        &:hover {
+          transform: scale(1.05); /* Slight zoom-in effect */
+        }
+      }
+  
+      .cardContent {
+        flex: 0 0 20%; /* Occupies 20% of the card */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #7b287d;
+        padding: 1rem;
+        color: #fff;
+  
+        .cardTitle {
+          font-size: 1.2rem;
+          font-weight: bold;
+          margin: 0;
+          flex: 1;
+        }
+  
+        
+      }
+    }
+  }
+}
+
+
+
+@include media($sm, max) {
+  .governanceSection {
+    font-size: 0.8rem;
+    padding: 0.5rem 2rem;
+    text-wrap: nowrap;
+  }
+}

@@ -1,0 +1,47 @@
+@use "@styles/partials/variable.scss" as *;
+@use "@styles/partials/_fonts.scss" as *;
+@use "@styles/partials/_mixins.scss" as *;
+
+
+.subscribeSection {
+    background: linear-gradient(90deg, #1C769A, #43549C); /* Gradient background */
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .contentWrapper {
+         display: flex ;
+        flex-direction: row;
+        align-items: center;
+        // gap: 1rem;
+        width: 100%;
+        justify-content: space-between;
+       
+  }
+  
+  .sectionTitle {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    @include media($sm, max) {
+      margin-bottom: 2rem;
+    }  
+  }
+
+  
+  @include media($sm, max) {
+    .contentWrapper{
+      flex-direction: column;
+    }
+  }
+  

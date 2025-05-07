@@ -1,0 +1,224 @@
+@use '@styles/partials/variable.scss' as *;
+@use '@styles/partials/_fonts.scss' as *;
+@use '@styles/partials/_mixins.scss' as *;
+
+.footer {
+  color: black;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  padding-top: 5rem;
+  font-weight: 600;
+
+  &.mt {
+    margin-top: 5rem;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2%;
+    background: linear-gradient(to right, #087daa, #1960af, #554ea1, #821787, #a8266a, #bd274f);
+    z-index: 10;
+  }
+
+  .overlayImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center;
+    z-index: 1;
+  }
+
+  .copyrightDiv {
+    padding-top: 8rem;
+    .navLink {
+      font-size: 0.875rem;
+      color: #666;
+    }
+
+    .navLink::after {
+      content: ' |';
+      color: #666; /* Match the text-muted color if necessary */
+    }
+
+    .navLink:last-child::after {
+      content: ''; /* Removes the separator for the last item */
+    }
+    .small {
+      font-size: 0.875rem;
+      color: #666;
+    }
+  }
+
+  .footerMenuRow {
+    padding-bottom: 7rem;
+    .webFooterAmbujaLogo {
+      width: 10rem;
+    }
+  }
+
+  .FooterSocialMediaLogo {
+    width: 14px;
+  }
+
+  .navLink {
+    color: #000000;
+    text-align: left;
+  }
+
+  h5 {
+    color: #000000;
+    margin-bottom: 1rem;
+  }
+
+  // .footerCementLogo img {
+  //   width: 25%;
+  // }
+
+  .small {
+    text-align: center;
+  }
+
+  .nav {
+    justify-content: center;
+  }
+
+  .nav-md {
+    justify-content: flex-end;
+  }
+
+  .footerCementLogo {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+    .footerAmbujalogo {
+      width: 25%;
+    }
+    .footerAdanilog {
+      width: 22%;
+    }
+  }
+
+  .FooterSocialMediaLogo {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  :global(.fw-bold-footer) {
+    font-size: 1.3rem !important;
+    font-weight: 500 !important;
+    color: black;
+    font-family: Adani-SemiBold;
+  }
+}
+
+.contentFooter,
+.contentMobileFooter {
+  position: relative;
+  z-index: 2;
+}
+
+// Mobile view styles
+.footerMobileView {
+  display: none;
+  padding: 2rem 0;
+  background-color: white;
+
+  .mobileCopyright {
+    text-align: left;
+    width: 100%;
+  }
+
+  .mobileCopyright .bottomSitemap .navLinkFooter::after {
+    content: ' | ';
+  }
+
+  .mobileCopyright .bottomSitemap .navLinkFooter:last-child::after {
+    content: ''; /* Removes the trailing pipe for the last item */
+  }
+
+  .mobileAccordion {
+    margin-bottom: 2rem;
+
+    :global(.accordion-button) {
+      background-color: transparent;
+      color: black;
+      font-weight: bold;
+      font-family: 'Adani-SemiBold';
+      font-size: 1.2rem;
+    }
+
+    :global(.accordion-body) {
+      padding-left: 2rem;
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+
+    :global(.accordion-item) {
+      border: none;
+    }
+
+    :global(.accordion-button:focus) {
+      border: none;
+    }
+
+    :global(.accordion-button:focus) {
+      box-shadow: none;
+    }
+
+    :global(.accordion-button:not(.collapsed)) {
+      box-shadow: none;
+    }
+
+    // Hide toggle button when no Accordion.Body exists
+    :global(.accordion-header.no-toggle)::after {
+      display: none !important;
+    }
+
+    :global(.nolist) :global(.accordion-button)::after {
+      display: none !important;
+    }
+
+    .mobileSocialLinks {
+      display: flex;
+      justify-content: center;
+    }
+
+    .mobileFooterLinks {
+      text-align: center;
+
+      .navLink {
+        padding: 0.5rem 0;
+      }
+    }
+  }
+}
+
+// Media query for mobile devices
+@include media($sm, max) {
+  .footerWebView {
+    display: none;
+  }
+
+  .footerMobileView {
+    display: block;
+  }
+
+  .footer {
+    padding-top: 0;
+
+    &::after {
+      height: 4px;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+@use '@styles/partials/variable.scss' as *;
+@use '@styles/partials/_fonts.scss' as *;
+@use '@styles/partials/_mixins.scss' as *;
+
+.emailFormSection {
+  background-color: #1a779a;
+
+  .formContainer {
+    padding-block: 2rem;
+
+    .heading {
+      font-size: 1.5rem;
+      color: #fff;
+      text-align: left;
+      margin-bottom: 0;
+      @media (max-width: $md) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .formBox {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+      form {
+        display: flex;
+        justify-content: space-between;
+        gap: 0;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        border: 0.2px solid #ffffff;
+        border-radius: 5px;
+        width: 100%;
+
+        input {
+          background-color: transparent;
+          border: none;
+          padding-left: 1rem;
+          color: #fff;
+          font-size: 1.1rem;
+          font-weight: 600;
+          width: 100%;
+
+          &::placeholder {
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 600;
+          }
+
+          &:focus-visible {
+            outline: none;
+          }
+        }
+        .submitButton {
+          background-color: #fff;
+          color: #1a779a;
+          font-size: 1rem;
+          font-weight: 600;
+          white-space: nowrap;
+          padding: .6em 1.2em;
+          border: 1px solid transparent;
+
+          &:hover {
+            border-color: #fff !important;
+          }
+        }
+      }
+      .error {
+        color: #fff;
+        text-align: left;
+      }
+    }
+  }
+}

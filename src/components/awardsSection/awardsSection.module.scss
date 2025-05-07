@@ -1,0 +1,162 @@
+@use '@styles/partials/variable.scss' as *;
+@use '@styles/partials/_fonts.scss' as *;
+@use '@styles/partials/_mixins.scss' as *;
+
+.financialResultsSection {
+  .title {
+    color: #0047cc;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 1000;
+    // margin-bottom: 1rem;
+    text-align: left;
+    font-family: 'Adani-Regular';
+
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .yearHead {
+    font-size: 1.5rem;
+    font-weight: 1000;
+    margin-bottom: 2rem;
+    text-align: left;
+    font-family: 'Adani-Regular';
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+
+    .yearSelector {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      select {
+        min-width: 15rem;
+        font-weight: 600;
+        option {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .cardBox {
+    text-decoration: none;
+
+    .cardCointainer {
+      height: 100%;
+      box-shadow: 0px 3px 6px #00000029;
+      border: none;
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 7 / 10;
+
+      &:hover {
+        .cardBody {
+          height: 60%;
+          background-color: rgba(255, 255, 255, 0.95);
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          .cardContent {
+            -webkit-line-clamp: none;
+          }
+        }
+      }
+      &:active {
+        .cardBody {
+          height: 60%;
+          background-color: rgba(255, 255, 255, 0.95);
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          .cardContent {
+            -webkit-line-clamp: none;
+          }
+        }
+      }
+
+      .cardImg {
+        aspect-ratio: 7 / 7.5;
+        object-fit: cover;
+        margin-right: 0;
+        position: absolute;
+        width: 100%;
+        top: 0;
+      }
+      .cardBody {
+        transition: all 0.4s ease-in-out;
+        background-color: #fff;
+        position: absolute;
+        bottom: 0;
+        height: 25%;
+        width: 100%;
+
+        .cardContent {
+          font-size: 1rem;
+          min-height: 4.4rem;
+          font-weight: 600;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+
+  .subTitle {
+    font-size: 1.2rem;
+    // margin: 1rem 0 2rem;
+    padding-left: 12px;
+    border-left: 3px solid #22c55e;
+    line-height: 1.5;
+    text-align: left;
+    font-family: 'Adani-Regular';
+    margin-bottom: 2.5rem;
+  }
+  .description {
+    font-size: 1.2rem;
+    margin: 1rem 0 2rem;
+    padding-left: 12px;
+    border-left: 3px solid #22c55e;
+    line-height: 1.5;
+    text-align: left;
+    font-family: 'Adani-Regular';
+  }
+
+  .noResults {
+    text-align: center;
+    padding: 2rem;
+    color: #6b7280;
+    font-size: 14px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .listItem {
+      padding: 12px;
+
+      img:first-child {
+        margin-right: 12px;
+      }
+    }
+  }
+}
+
+.max3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Number of lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

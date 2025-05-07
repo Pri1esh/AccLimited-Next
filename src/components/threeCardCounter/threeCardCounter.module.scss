@@ -1,0 +1,59 @@
+@use '@styles/partials/variable.scss' as *;
+@use '@styles/partials/_fonts.scss' as *;
+@use '@styles/partials/_mixins.scss' as *;
+
+.statsContainer {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.statsCard {
+  flex: 1;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  color: white;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  &:nth-child(1) {
+    background-color: #1d3557; // First card color
+  }
+
+  &:nth-child(2) {
+    background-color: #2b4c7e; // Second card color
+  }
+
+  &:nth-child(3) {
+    background-color: #4f7ca4; // Third card color
+  }
+  &:nth-child(4) {
+    background-color: #1d3557; // Third card color
+  }
+}
+
+.title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.count {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.subHeading{
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1; 
+}

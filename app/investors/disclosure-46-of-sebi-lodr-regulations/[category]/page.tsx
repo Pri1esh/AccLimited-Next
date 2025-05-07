@@ -1,0 +1,44 @@
+import { ENDPOINT } from '@api-manager';
+import { CustomHeading, ErrorFallback, ImageBannerComponent, Layout, ShareHolderInfo } from '@components';
+import { getApiData, getMetadata } from '@utils/server';
+
+export async function generateMetadata({ params }: { params: Promise<{ category: string }> }): Promise<any> {
+  const { category } = await params;
+  const apiData = await getApiData(ENDPOINT.SSR.disclosure46_category + category);
+  const { data } = apiData;
+
+  return getMetadata(data?.main?.SEO?.fields);
+}
+
+const DisclouserCategory = async ({ params }: { params: Promise<{ category: string }> }) => {
+  const { category } = await params;
+  const apiData = await getApiData(ENDPOINT.SSR.disclosure46_category + category);
+  const { data, errorData } = apiData;
+
+  if (errorData || !data) {
+    return <ErrorFallback description={errorData?.error} errorMessage={errorData?.errorMessage} />;
+  }
+
+  const { footer, header, main } = data;
+
+  return (
+    <Layout
+      footerData={footer?.Footer?.fields}
+      headerData={header}
+      headerAbsolute={false}
+      isHomePage={true}
+      seoData={main?.SEO?.fields}
+      defaultActiveTab={main?.CommonKey?.fields?.defaultActiveTab}
+    >
+      <>
+        {main?.CommonPageData && (
+          <ImageBannerComponent breadCrumbs={main?.Breadcrumb} compData={main?.CommonPageData?.fields} />
+        )}
+        {main?.CommonPageData && <CustomHeading compData={main?.CommonPageData?.fields} />}
+        {main?.DisputeResolutionMechanism && <ShareHolderInfo compData={main?.DisputeResolutionMechanism?.fields} />}
+      </>
+    </Layout>
+  );
+};
+
+export default DisclouserCategory;
