@@ -22,8 +22,8 @@ const Layout = (props: LayoutProps) => {
           __html: JSON.stringify({
             "@context": "https://schema.org/",
             "@type": "Organization",
-            name: seoData?.orgSchema?.name ?? "Ambuja Help",
-            url: seoData?.orgSchema?.url ?? "https://www.ambujahelp.in/",
+            name: seoData?.orgSchema?.name ?? "ACC Limited",
+            url: seoData?.orgSchema?.url ?? "https://www.acclimited.com/",
             logo: seoData?.orgSchema?.logo ?? "",
             address: {
               "@type": "PostalAddress",

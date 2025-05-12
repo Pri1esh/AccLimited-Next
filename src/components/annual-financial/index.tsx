@@ -34,7 +34,7 @@ export default function AnnualFinancial(props: IPresentationBRSR) {
                           <Link target="_blank" href={baseURL + report?.fields?.PDFLink}>
                             <Image
                               className={styles.icon}
-                              src={'/-/media/Project/AmbujaLimited/Common/icons/pdf'}
+                              src={'/-/media/Project/acc-limited/Common/icons/pdf'}
                             />
                             <div>
                               {report?.fields?.PDFName && (
@@ -69,7 +69,7 @@ export default function AnnualFinancial(props: IPresentationBRSR) {
                           <Link target="_blank" href={baseURL + report?.fields?.PDFLink}>
                             <Image
                               className={styles.icon}
-                              src={'/-/media/Project/AmbujaLimited/Common/icons/pdf'}
+                              src={'/-/media/Project/acc-limited/Common/icons/pdf'}
                             />
                             <div>
                               {report?.fields?.PDFName && (

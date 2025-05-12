@@ -1,6 +1,6 @@
 'use client';
 
-import {Image} from '@components';
+import { Image } from '@components';
 import { IErrorPage } from '@interfaces';
 import Head from 'next/head';
 import { Button, Container } from 'react-bootstrap';
@@ -22,7 +22,7 @@ const ErrorFallback = (props: IErrorPage) => {
   return (
     <Container>
       <Head>
-        <title>{`Ambuja Help : ${error}`}</title>
+        <title>{`ACC Limited : ${error}`}</title>
       </Head>
       <div className={styles.wrapper}>
         <div className={styles.mainWrapper}>

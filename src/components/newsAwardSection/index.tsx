@@ -73,7 +73,7 @@ export default function NewsUpdatesSection(props: IHNewsUpdates) {
             </Swiper>
 
             <GradientBtn
-              link={'/about-ambuja/awards-and-recognition'}
+              link={'/about-acc/awards-and-recognition'}
               className={styles.moreBtn}
               text="View More"
               middle={false}

@@ -33,14 +33,14 @@ export default function DreamHomeSection(props:IHAmbujaHelp) {
               
            
             {(deviceType==="mobile" || deviceType==="tabletVertical")  && 
-            <GradientBtn text={"Visit Ambuja help"} link={banners?.[0]?.ctaLink} />
+            <GradientBtn text={"Visit ACC help"} link={banners?.[0]?.ctaLink} />
             }
             </Col>
             <Col md={6} className={styles.imageContent}>
               <div className={styles.imageWrapper}>
                 <Image
                   src={banners?.[0]?.imageSource}
-                  alt="Ambuja help logo"
+                  alt="ACC help logo"
                   className={styles.logo}
                 />
               </div>
