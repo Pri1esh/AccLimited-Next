@@ -47,7 +47,7 @@ const nextConfig: NextConfig = {
           },
           {
             key: 'Access-Control-Allow-Origin',
-            value: 'https://uat-s.acclimited.com',
+            value: baseUrl,
           },
           {
             key: 'Access-Control-Allow-Methods',
