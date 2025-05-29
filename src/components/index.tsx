@@ -83,3 +83,4 @@ export { default as ThreeCountCards } from './threeCardCounter';
 export { default as UnderConstruction } from './underConstruction';
 export { default as VideoModal } from './videoModal';
 export { default as WhiteButton } from './whiteButton';
+export { default as BreadCrumbSection } from './breadCrumbSection';

@@ -1,0 +1,33 @@
+@use "@styles/partials/variable.scss" as *;
+@use "@styles/partials/_fonts.scss" as *;
+@use "@styles/partials/_mixins.scss" as *;
+
+.BannerInvestorSection {
+  position: relative; // Enable positioning for overlay centering
+  width: 100%;
+  margin-top: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 768px) {
+    margin-top: 4.5rem;
+  }
+
+  .breadCrumbs{
+    top: 20px;
+    z-index: 10;
+    position: relative;
+
+    a{
+      color: #7c7c7c !important;
+      font-weight: 600;
+    }
+  }
+
+  @include media($sm, max) {
+    margin-top: 5rem;
+  }
+}
+
+
+

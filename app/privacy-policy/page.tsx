@@ -1,4 +1,4 @@
-import { BrandStorySection, CustomHeading, ErrorFallback, ImageBannerComponent, Layout } from '@components';
+import { BrandStorySection, BreadCrumbSection, CustomHeading, ErrorFallback, Layout } from '@components';
 import { ENDPOINT } from '@api-manager';
 import { getApiData, getMetadata } from '@utils/server';
 
@@ -30,7 +30,7 @@ const PrivacyPolicy = async () => {
       defaultActiveTab={main?.CommonKey?.fields?.defaultActiveTab}
     >
       <>
-        {main?.CommonPageData && <ImageBannerComponent breadCrumbs={main?.Breadcrumb} compData={main?.CommonPageData?.fields} />}
+        {main?.CommonPageData && <BreadCrumbSection breadCrumbs={main?.Breadcrumb} />}
         {main?.CommonPageData && <CustomHeading compData={main?.CommonPageData?.fields} />}
         {main?.RTEComponent && <BrandStorySection compData={main?.RTEComponent} />}
       </>

@@ -3,13 +3,13 @@ import styles from './footer.module.scss';
 import { Image } from '@components';
 import { IFooter } from '@interfaces';
 import { CustomImage } from '@components';
+import Link from 'next/link';
 
 export default function Footer(props: IFooter) {
-  const { compData, mt=true } = props;
+  const { compData, mt = true } = props;
   const { footerData = {} } = compData;
 
   const { background, footerMainNavigations, socialLinks, logo, buCopyright } = footerData;
-
 
   return (
     <>
@@ -17,8 +17,8 @@ export default function Footer(props: IFooter) {
         <footer className={`${styles.footer} ${mt ? styles.mt : ''}`}>
           <section className={styles.footerWebView}>
             {/* <Image src={footerBg} alt="" className={styles.overlayImage} /> */}
-           
-            <CustomImage compData={background} className={styles.overlayImage}/>
+
+            <CustomImage compData={background} className={styles.overlayImage} />
             <div className={styles.contentFooter}>
               <Container>
                 <Row className={styles.footerMenuRow}>
@@ -26,26 +26,21 @@ export default function Footer(props: IFooter) {
                     <Col xs={5} md={6} lg={3} className={`mb-4`}>
                       {/* Parent Navigation Link */}
                       <Nav className={`flex-column`}>
-                        <Nav.Link
-                          href="#"
-                          className={`p-0 mb-2 ${styles.navLink} fw-bold-footer`}
-                        >
+                        <Nav.Link href="#" className={`p-0 mb-2 ${styles.navLink} fw-bold-footer`}>
                           {footerMainNavigations?.[0]?.heading}
                         </Nav.Link>
                         {/* Sub-Navigation Links */}
                         <Nav.Item className={``}>
-                          {footerMainNavigations?.[0]?.footerLinks.map(
-                            (item: any, index: number) => (
-                              <Nav.Link
-                                key={index}
-                                href={item?.link}
-                                className={`p-0 mb-2 ${styles.navLink}`}
-                                target={item?.target}
-                              >
-                                {item?.linkText}
-                              </Nav.Link>
-                            )
-                          )}
+                          {footerMainNavigations?.[0]?.footerLinks.map((item: any, index: number) => (
+                            <Nav.Link
+                              key={index}
+                              href={item?.link}
+                              className={`p-0 mb-2 ${styles.navLink}`}
+                              target={item?.target}
+                            >
+                              {item?.linkText}
+                            </Nav.Link>
+                          ))}
                         </Nav.Item>
                       </Nav>
                     </Col>
@@ -71,26 +66,23 @@ export default function Footer(props: IFooter) {
                     <Col xs={5} md={6} lg={3} className={`mb-4`}>
                       {/* Parent Navigation Link */}
                       <Nav className={`flex-column`}>
-                        <Nav.Link
-                          href="#"
-                          className={`p-0 mb-2 ${styles.navLink} fw-bold-footer`}
-                        >
+                        <Nav.Link href="#" className={`p-0 mb-2 ${styles.navLink} fw-bold-footer`}>
                           {footerMainNavigations?.[footerMainNavigations.length - 1]?.heading}
                         </Nav.Link>
                         {/* Sub-Navigation Links */}
                         <Nav.Item className={``}>
-                          {footerMainNavigations?.[
-                            footerMainNavigations.length - 1
-                          ]?.footerLinks.map((item: any, index: number) => (
-                            <Nav.Link
-                              key={index}
-                              href={item?.link}
-                              className={`p-0 mb-2 ${styles.navLink}`}
-                              target={item?.target}
-                            >
-                              {item?.linkText}
-                            </Nav.Link>
-                          ))}
+                          {footerMainNavigations?.[footerMainNavigations.length - 1]?.footerLinks.map(
+                            (item: any, index: number) => (
+                              <Nav.Link
+                                key={index}
+                                href={item?.link}
+                                className={`p-0 mb-2 ${styles.navLink}`}
+                                target={item?.target}
+                              >
+                                {item?.linkText}
+                              </Nav.Link>
+                            ),
+                          )}
                         </Nav.Item>
                       </Nav>
                     </Col>
@@ -100,12 +92,7 @@ export default function Footer(props: IFooter) {
                     <div className={`mb-3 d-flex justify-content-center`}>
                       {socialLinks?.[0] &&
                         socialLinks[0]?.socialLinksLogos?.map((socialMenu: any, index: number) => (
-                          <Nav.Link
-                            key={index}
-                            href={socialMenu.link}
-                            target={socialMenu.target}
-                            className={`p-2`}
-                          >
+                          <Nav.Link key={index} href={socialMenu.link} target={socialMenu.target} className={`p-2`}>
                             <Image
                               src={socialMenu.iconImg}
                               alt={socialMenu.linkText}
@@ -132,15 +119,9 @@ export default function Footer(props: IFooter) {
                       <small className={styles.small}>{buCopyright.subHeading}</small>
                     </Col>
                     <Col xs={12} md={8}>
-                      <Nav
-                        className={`justify-content-center justify-content-md-end ${styles.nav}`}
-                      >
+                      <Nav className={`justify-content-center justify-content-md-end ${styles.nav}`}>
                         {buCopyright?.linkModels?.map((sitemapmenu: any, index: number) => (
-                          <Nav.Link
-                            key={index}
-                            href="#"
-                            className={`px-2 ${styles.navLink}`}
-                          >
+                          <Nav.Link as={Link} key={index} href={sitemapmenu.link || "/"} className={`px-2 ${styles.navLink}`}>
                             {sitemapmenu.linkText}
                           </Nav.Link>
                         ))}
@@ -153,22 +134,13 @@ export default function Footer(props: IFooter) {
           </section>
 
           <section className={styles.footerMobileView}>
-            <CustomImage
-              compData={background}
-              className={styles.overlayImage}
-            />
+            <CustomImage compData={background} className={styles.overlayImage} />
             <div className={styles.contentMobileFooter}>
               <Container>
                 <Accordion className={styles.mobileAccordion}>
                   {footerMainNavigations?.map((menu: any, index: number) => (
-                    <Accordion.Item
-                      eventKey={`${index}`}
-                      key={index}
-                    >
-                      <Accordion.Header 
-                      className={menu?.footerLinks && menu.footerLinks.length > 0
-                        ? ""
-                        : "nolist"}>
+                    <Accordion.Item eventKey={`${index}`} key={index}>
+                      <Accordion.Header className={menu?.footerLinks && menu.footerLinks.length > 0 ? '' : 'nolist'}>
                         {menu?.link ? (
                           <Nav.Link
                             href={menu.link}
@@ -191,9 +163,7 @@ export default function Footer(props: IFooter) {
                                 key={linkIndex}
                                 href={linkItem.link || '#'}
                                 target={linkItem.target || '_self'}
-                                rel={
-                                  linkItem.target === '_blank' ? 'noopener noreferrer' : undefined
-                                }
+                                rel={linkItem.target === '_blank' ? 'noopener noreferrer' : undefined}
                                 className={`p-0 mb-2 ${styles.navLink}`}
                               >
                                 {linkItem.linkText}
@@ -208,33 +178,27 @@ export default function Footer(props: IFooter) {
 
                 <div className={`${styles.mobileSocialLinks} mb-4 mt-4`}>
                   <Nav className={`justify-content-center`}>
-                    {socialLinks?.[0]?.socialLinksLogos?.map(
-                      (socialMenuMobile: any, index: number) => (
-                        <Nav.Link
-                          key={index}
-                          href={socialMenuMobile.link}
-                          target={socialMenuMobile.target}
-                          className="p-3"
-                        >
-                          <Image
-                            src={socialMenuMobile.iconImg}
-                            alt={socialMenuMobile.linkText || 'Social Link'}
-                            className={styles.FooterSocialMediaLogo}
-                          />
-                        </Nav.Link>
-                      )
-                    )}
+                    {socialLinks?.[0]?.socialLinksLogos?.map((socialMenuMobile: any, index: number) => (
+                      <Nav.Link
+                        key={index}
+                        href={socialMenuMobile.link}
+                        target={socialMenuMobile.target}
+                        className="p-3"
+                      >
+                        <Image
+                          src={socialMenuMobile.iconImg}
+                          alt={socialMenuMobile.linkText || 'Social Link'}
+                          className={styles.FooterSocialMediaLogo}
+                        />
+                      </Nav.Link>
+                    ))}
                   </Nav>
                 </div>
                 <div className={`${styles.mobileCopyright} mb-4`}>
                   {buCopyright && <p> {buCopyright.subHeading}</p>}
                   <Nav className={styles.bottomSitemap}>
                     {buCopyright?.linkModels?.map((sitemapmenu: any, index: number) => (
-                      <Nav.Link
-                        key={index}
-                        href="#"
-                        className={`px-2 ${styles.navLinkFooter}`}
-                      >
+                      <Nav.Link key={index} href="#" className={`px-2 ${styles.navLinkFooter}`}>
                         {sitemapmenu.linkText}
                       </Nav.Link>
                     ))}

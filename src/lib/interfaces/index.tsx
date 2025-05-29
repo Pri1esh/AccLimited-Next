@@ -17,6 +17,10 @@ export interface IImageBanner {
   compData: any;
   breadCrumbs?: any;
 }
+export interface IBreadCrumbSection {
+  breadCrumbs?: any;
+}
+
 export interface ICustomHeading {
   compData: any;
   h?:number;
