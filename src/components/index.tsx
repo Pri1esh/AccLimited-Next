@@ -80,5 +80,6 @@ export { default as SustainabilityGrid } from './susTainabilityGrid';
 export { default as TwoCardSection } from './twoCardSection';
 export { default as ThankYouModal } from './thankYouModal';
 export { default as ThreeCountCards } from './threeCardCounter';
+export { default as UnderConstruction } from './underConstruction';
 export { default as VideoModal } from './videoModal';
 export { default as WhiteButton } from './whiteButton';

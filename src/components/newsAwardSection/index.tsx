@@ -8,6 +8,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Autoplay, Pagination } from 'swiper/modules';
 import { formateDate } from '@utils';
+import Link from 'next/link';
 
 export default function NewsUpdatesSection(props: IHNewsUpdates) {
   const { compData } = props;
@@ -22,13 +23,13 @@ export default function NewsUpdatesSection(props: IHNewsUpdates) {
             <div className={styles.newsList}>
               {newsList.length > 0 &&
                 newsList.map((news: any, index: number) => (
-                  <div className={styles.newsTile} key={index}>
+                  <Link href={news?.ctaLink} className={styles.newsTile} key={index}>
                     <CustomImage compData={news} className={styles.newsIcon} />
                     <div className={styles.details}>
                       <p className={styles.date}>{formateDate(news?.date)}</p>
                       <p className={`${styles.description} max2`}>{news?.imageTitle}</p>
                     </div>
-                  </div>
+                  </Link>
                 ))}
             </div>
             <GradientBtn link={'/newsroom/media-releases'} text="View More" middle={false} className={styles.moreBtn}/>

@@ -65,6 +65,9 @@ export default class ENDPOINT {
     boardOfDirector: `/sitecore/api/layout/render/jss?sc_apikey={9086F926-F88D-4DDF-9F38-0F0CA046EE6D}&sc_content=web&item=/sitecore/content/AmbujaLimited/Home/Investors/Board-of-Directors//investors/brsr/business-responsibility-and-sustainability-report-fy-2023-24/`,
 
     contactUs: `/sitecore/api/layout/render/jss?item={EDCCC14F-581E-4CA4-9D6F-36605C3444B0}&sc_apikey={9086F926-F88D-4DDF-9F38-0F0CA046EE6D}`,
+
+    privacyPolicy: `/sitecore/api/layout/render/jss?item={5ED0339D-05AF-47F0-ABE8-1EF84BC5B8A7}&sc_apikey={9086F926-F88D-4DDF-9F38-0F0CA046EE6D}`,
+
   };
   static CLIENT = {
     subscribeUs: '/api/AmbujaSubscribe/AddSubscribers',

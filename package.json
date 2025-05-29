@@ -10,7 +10,9 @@
     "build:stage": "node set-env.js stage && npm run build",
     "start:stage": "node set-env.js stage && npm run start",
     "build:prod": "node set-env.js prod && npm run build",
-    "start:prod": "node set-env.js prod && npm run start"
+    "start:prod": "node set-env.js prod && npm run start",
+    "build:dr": "node set-env.js dr && npm run build",
+    "start:dr": "node set-env.js dr && npm run start"
   },
   "dependencies": {
     "@microsoft/applicationinsights-react-js": "^18.3.6",
