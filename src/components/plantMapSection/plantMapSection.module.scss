@@ -281,6 +281,11 @@
       border-color: #ec7016;
       background-color: #ec7016;
     }
+    .Orient_Cement{
+      border-color: #00bbff;
+      background-color: #00bbff;
+    }
+
   }
 
   .contentRow {
@@ -422,6 +427,9 @@
 
         &:nth-child(5):before {
           background-color: #ec7016;
+        }
+        &:nth-child(6):before {
+          background-color: #00bbff;
         }
       }
     }

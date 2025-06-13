@@ -1,4 +1,4 @@
-import { ErrorFallback, Layout, UnderConstruction } from '@components';
+import { CustomReadMoreSction, ErrorFallback, ImageBannerComponent, Layout, MediaMenuCards, RteData, ScrollCards, SustainabilityDropSlider, SustainabilityGrid, TwoCardSection } from '@components';
 import { ENDPOINT } from '@api-manager';
 import { getApiData, getMetadata } from '@utils/server';
 
@@ -30,7 +30,7 @@ const SustainabilityPage = async () => {
       defaultActiveTab={main?.CommonKey?.fields?.defaultActiveTab}
     >
       <>
-        {/* {main?.CommonPageData && (
+        {main?.CommonPageData && (
           <ImageBannerComponent
             breadCrumbs={main?.Breadcrumb}
             compData={main?.CommonPageData?.fields}
@@ -50,8 +50,8 @@ const SustainabilityPage = async () => {
         )}
         {main?.['ESGFramework'] && <RteData compData={main?.['ESGFramework']?.fields} />}
         {main?.['ESGPolicies'] && <ScrollCards compData={main?.['ESGPolicies']?.fields} />}
-        {main?.['4CardsSection'] && <MediaMenuCards compData={main?.['4CardsSection']?.fields} />} */}
-        <UnderConstruction/>
+        {main?.['4CardsSection'] && <MediaMenuCards compData={main?.['4CardsSection']?.fields} />}
+        {/* <UnderConstruction/> */}
       </>
     </Layout>
   );

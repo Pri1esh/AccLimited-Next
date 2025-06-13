@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Container, Form } from 'react-bootstrap';
 import styles from './plantMapSection.module.scss';
-import {Image} from '@components';
+import { Image } from '@components';
 import { IHPlant } from '@interfaces';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -34,7 +34,7 @@ export default function PlantMapSection(props: IHPlant) {
       item?.coordinatListsData.map((locs: any) => {
         shapeLocalData.push({
           type: locs?.type,
-          class: `${styles.shape} ${styles[getShape(locs?.type)]} ${styles[item?.id]}`,
+          class: `${styles.shape} ${styles[getShape(locs?.type)]} ${styles[item?.id?.replace(/ /g,'_')]}`,
           tooltip: locs?.state,
           label: locs?.area,
           offset: { x: locs?.offsets?.x, y: locs?.offsets?.y },
@@ -172,7 +172,7 @@ export default function PlantMapSection(props: IHPlant) {
                 <div className={`${styles.listColumn} me-3`}>
                   <ul className={styles.plantList}>
                     {map?.data?.mapLocationFilterData.map((item: any, index: number) => (
-                      <li className={`${styles[item.id]}`} key={index}>
+                      <li className={`${styles[item.id?.replace(/ /g,'_')]}`} key={index}>
                         {item.id}
                       </li>
                     ))}
